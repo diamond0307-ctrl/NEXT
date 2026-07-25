@@ -109,6 +109,13 @@
 
   .divider-curve{ display:block; width:100%; height:auto; }
 
+  .mobile-cta-bar{ padding-bottom: max(.75rem, env(safe-area-inset-bottom)); }
+  @media (max-width: 639px){
+    body{ padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+    #concierge-input{ font-size:16px; } /* prevents iOS from zooming the viewport on focus */
+    .concierge-shell{ height:min(620px,72svh) !important; min-height:540px; }
+  }
+
   /* ---- Opening brand animation ---- */
   html.opening-lock-scroll, html.opening-lock-scroll body{ overflow:hidden; height:100%; }
 
@@ -235,6 +242,7 @@
       <a href="#offer" class="hover:text-salmon-500 transition-colors">サービスについて</a>
       <a href="#shift" class="hover:text-salmon-500 transition-colors">集客導線の考え方</a>
       <a href="#numbers" class="hover:text-salmon-500 transition-colors">改善イメージ</a>
+      <a href="#pricing" class="hover:text-salmon-500 transition-colors">料金・比較</a>
       <a href="#flow" class="hover:text-salmon-500 transition-colors">導入の流れ</a>
       <a href="#faq" class="hover:text-salmon-500 transition-colors">よくあるご質問</a>
     </nav>
@@ -255,6 +263,7 @@
       <a href="#offer" class="py-3 border-b border-navy-700/5">サービスについて</a>
       <a href="#shift" class="py-3 border-b border-navy-700/5">集客導線の考え方</a>
       <a href="#numbers" class="py-3 border-b border-navy-700/5">改善イメージ</a>
+      <a href="#pricing" class="py-3 border-b border-navy-700/5">料金・比較</a>
       <a href="#flow" class="py-3 border-b border-navy-700/5">導入の流れ</a>
       <a href="#faq" class="py-3 border-b border-navy-700/5">よくあるご質問</a>
       <div class="flex flex-col gap-3 mt-4">
@@ -281,17 +290,23 @@
       <div class="lg:col-span-5 relative z-10 order-1 reveal">
         <p class="font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-4">FOR BEAUTY SALON OWNERS</p>
         <h1 class="tracking-tight">
-          <span class="block font-black text-navy-700 text-[36px] sm:text-[48px] leading-[1.18]">美容室の集客を、</span>
-          <span class="block font-black text-salmon-400 text-[46px] sm:text-[76px] leading-[1.05] mt-1">AI時代仕様に</span>
-          <span class="block font-black text-navy-700 text-[32px] sm:text-[52px] leading-[1.2] mt-1">アップデート。</span>
+          <span class="block font-black text-navy-700 text-[28px] sm:text-[40px] leading-[1.3]">新規は来る。<br>でも、次につながらない。</span>
+          <span class="block font-black text-salmon-400 text-[39px] sm:text-[64px] leading-[1.12] mt-3">その集客を、</span>
+          <span class="block font-black text-navy-700 text-[31px] sm:text-[48px] leading-[1.25] mt-1">自社の資産へ。</span>
         </h1>
         <p class="mt-6 text-[15px] sm:text-[16px] leading-[1.9] text-navy-500 max-w-md">
-          ホットペッパー、Instagram、LINE。今ある集客を活かしながら、AIコンシェルジュと専用LPで、これからの集客基盤を一緒につくります。
+          ポータルサイトをやめる提案ではありません。今ある集客を活かしながら、予約前の不安に24時間答えるAIコンシェルジュと専用LPで、価格だけで選ばれない導線をつくります。
         </p>
+
+        <ul class="mt-5 flex flex-wrap gap-2 text-[11.5px] font-bold text-navy-600" aria-label="よくある集客課題">
+          <li class="rounded-full bg-white/85 border border-navy-700/10 px-3 py-2">固定費が重い</li>
+          <li class="rounded-full bg-white/85 border border-navy-700/10 px-3 py-2">クーポン客が定着しない</li>
+          <li class="rounded-full bg-white/85 border border-navy-700/10 px-3 py-2">電話対応を減らしたい</li>
+        </ul>
 
         <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <a href="#cta-final" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-salmon-400 text-white text-[15px] font-bold shadow-lift hover:bg-salmon-500 transition-colors">
-            無料で相談する
+            30分の無料相談を予約する
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
           <a href="#concierge-demo" class="inline-flex items-center gap-1.5 text-navy-700 text-[14.5px] font-bold underline decoration-2 decoration-yellow-400 underline-offset-4 hover:text-salmon-500 transition-colors">
@@ -713,7 +728,12 @@
           電話をするほどではないけれど、予約する前に確認しておきたいこと。AIコンシェルジュなら、24時間その場で回答し、自然に予約までご案内します。
         </p>
 
-        <div class="relative max-w-sm mx-auto lg:max-w-none lg:mx-0">
+        <a href="#concierge-chat" class="lg:hidden mb-6 w-full inline-flex items-center justify-center gap-2 rounded-full bg-sky-200 px-5 py-3.5 text-[14px] font-black text-navy-800 shadow-softer">
+          質問を選んで、30秒体験
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+
+        <div class="relative max-w-sm mx-auto lg:max-w-none lg:mx-0 hidden lg:block">
           <div class="kb-wrap relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-lift">
             <video
               id="concierge-hero-video"
@@ -738,8 +758,9 @@
         </div>
       </div>
 
-      <div class="lg:col-span-7 reveal-right mt-4 lg:mt-0">
-        <div class="rounded-[2rem] bg-cream-100 border border-navy-700/10 shadow-lift overflow-hidden flex flex-col" style="height:min(660px,78vh)">
+      <div id="concierge-chat" class="lg:col-span-7 reveal-right mt-0 scroll-mt-24">
+        <p class="lg:hidden mb-3 text-center text-[12px] font-bold text-salmon-500">下の質問をタップするだけで体験できます</p>
+        <div class="concierge-shell rounded-[2rem] bg-cream-100 border border-navy-700/10 shadow-lift overflow-hidden flex flex-col" style="height:min(660px,78vh)">
           <!-- header -->
           <div class="flex items-center justify-between gap-3 px-5 py-4 bg-white border-b border-navy-700/10">
             <div class="flex items-center gap-2.5 min-w-0">
@@ -1100,6 +1121,69 @@
 </section>
 
 <!-- ============================================================ -->
+<!-- 料金目安 / 他社比較                                            -->
+<!-- ============================================================ -->
+<section id="pricing" class="relative bg-navy-900 text-white overflow-hidden py-24 sm:py-32 scroll-mt-20">
+  <div aria-hidden="true" class="blob absolute -top-28 -right-24 w-[360px] h-[360px] bg-salmon-400/15"></div>
+  <div aria-hidden="true" class="blob absolute -bottom-32 -left-24 w-[380px] h-[380px] bg-sky-300/10"></div>
+
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 relative">
+    <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+      <p class="font-accent text-salmon-300 text-[12px] tracking-[0.25em] font-bold mb-3">PRICE &amp; DIFFERENCE</p>
+      <h2 class="font-black text-[28px] sm:text-[42px] leading-tight">必要なものを、<br class="sm:hidden">バラバラに発注しない。</h2>
+      <p class="mt-5 text-[14px] sm:text-[16px] leading-loose text-white/65">サロンの規模や現在の集客導線を確認し、必要な範囲だけをご提案します。ポータル掲載費・広告費とは別に、自社に残る受付導線を育てるための費用です。</p>
+    </div>
+
+    <div class="grid lg:grid-cols-5 gap-6 items-stretch">
+      <div class="lg:col-span-2 rounded-[2rem] bg-white text-navy-700 p-7 sm:p-9 shadow-lift reveal-left">
+        <p class="inline-flex rounded-full bg-salmon-100 px-3 py-1.5 text-[11px] font-black text-salmon-600">料金の目安</p>
+        <div class="mt-6 pb-6 border-b border-navy-700/10">
+          <p class="text-[12px] font-bold text-navy-400">初期設計・制作</p>
+          <p class="mt-1 font-accent font-black text-[38px] sm:text-[44px] tracking-tight">55万円<span class="text-[15px] font-bold">〜</span></p>
+          <p class="mt-2 text-[12.5px] text-navy-500">戦略設計／専用LP／AIコンシェルジュ初期構築</p>
+        </div>
+        <div class="py-6 border-b border-navy-700/10">
+          <p class="text-[12px] font-bold text-navy-400">運用・改善サポート</p>
+          <p class="mt-1 font-accent font-black text-[34px] tracking-tight">月額 5.5万円<span class="text-[15px] font-bold">〜</span></p>
+          <p class="mt-2 text-[12.5px] text-navy-500">会話ログ分析／改善提案／LP・AIの更新</p>
+        </div>
+        <p class="mt-5 text-[11px] leading-relaxed text-navy-400">※価格は税込の目安です。撮影・広告運用・Lステップ構築など、必要な施策により個別にお見積もりします。</p>
+      </div>
+
+      <div class="lg:col-span-3 rounded-[2rem] border border-white/15 bg-white/[.06] backdrop-blur p-6 sm:p-9 reveal-right">
+        <h3 class="font-black text-[22px] sm:text-[28px]">一般的な分業との違い</h3>
+        <div class="mt-7 overflow-x-auto -mx-1 px-1">
+          <table class="w-full min-w-[560px] text-left text-[12.5px] sm:text-[13px]">
+            <thead>
+              <tr class="border-b border-white/15 text-white/45">
+                <th class="py-3 pr-4 font-bold">比較項目</th>
+                <th class="py-3 px-4 font-bold">大手代理店</th>
+                <th class="py-3 px-4 font-bold">通常の制作会社</th>
+                <th class="py-3 pl-4 font-black text-salmon-300">Next Design</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/10">
+              <tr><th class="py-4 pr-4 font-bold">美容室の現場理解</th><td class="px-4 text-white/55">担当者による</td><td class="px-4 text-white/55">ヒアリング中心</td><td class="pl-4 font-bold text-white">元美容師が設計</td></tr>
+              <tr><th class="py-4 pr-4 font-bold">制作範囲</th><td class="px-4 text-white/55">広告中心</td><td class="px-4 text-white/55">サイト中心</td><td class="pl-4 font-bold text-white">LP・AI・広告を一体化</td></tr>
+              <tr><th class="py-4 pr-4 font-bold">公開後</th><td class="px-4 text-white/55">レポート中心</td><td class="px-4 text-white/55">保守中心</td><td class="pl-4 font-bold text-white">会話ログから改善</td></tr>
+              <tr><th class="py-4 pr-4 font-bold">残るもの</th><td class="px-4 text-white/55">掲載・配信中の流入</td><td class="px-4 text-white/55">Webサイト</td><td class="pl-4 font-bold text-salmon-300">自社の集客データと導線</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 rounded-[2rem] bg-cream-100 text-navy-700 p-7 sm:p-10 flex flex-col lg:flex-row lg:items-center justify-between gap-7 reveal">
+      <div>
+        <p class="font-black text-[20px] sm:text-[25px]">無料相談で、いきなり契約を勧めることはありません。</p>
+        <p class="mt-2 text-[13px] sm:text-[14px] leading-relaxed text-navy-500">現在の掲載費・予約経路・問い合わせ内容を整理し、「今やるべきか」「どこから始めるか」を30分で一緒に確認します。</p>
+      </div>
+      <a href="#cta-final" class="shrink-0 inline-flex items-center justify-center rounded-full bg-salmon-400 px-7 py-4 text-[14px] font-black text-white shadow-soft hover:bg-salmon-500 transition-colors">相談できる内容を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
 <!-- 導入の流れ / FAQ / 最終CTA                                    -->
 <!-- ============================================================ -->
 <section id="flow" class="relative bg-white pt-24 sm:pt-32 pb-24 sm:pb-32 overflow-hidden scroll-mt-20">
@@ -1198,17 +1282,49 @@
     <div class="absolute inset-0 bg-gradient-to-t from-white/70 sm:bg-gradient-to-r sm:from-white/85 sm:via-white/35 sm:to-transparent"></div>
 
     <div class="relative max-w-3xl w-full mx-auto sm:mx-0 sm:ml-[6vw] px-5 sm:px-0 py-16 sm:py-0 reveal">
-      <div class="bg-cream-100/95 backdrop-blur rounded-[2rem] p-8 sm:p-12 shadow-lift max-w-lg">
+      <div class="bg-cream-100/95 backdrop-blur rounded-[2rem] p-7 sm:p-10 shadow-lift max-w-xl">
         <img src="assets/logo-mark-alpha.png" alt="" aria-hidden="true" class="h-7 w-auto mb-6 opacity-90">
-        <h2 class="font-black text-navy-700 text-[28px] sm:text-[40px] leading-snug">美容室の集客に、<br>もう一つの可能性を。</h2>
-        <p class="mt-5 text-[14px] sm:text-[16px] text-navy-500 leading-loose">広告費を増やすのではなく、お店の資産を育てていきませんか？</p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-3">
-          <a href="#" data-cta="consult" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-salmon-400 text-white text-[15px] font-bold hover:bg-salmon-500 transition-colors shadow-lift">
-            無料で相談する
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#concierge-demo" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-navy-700 text-navy-700 text-[15px] font-bold hover:bg-navy-700 hover:text-white transition-colors">AIを体験してみる</a>
-        </div>
+        <h2 class="font-black text-navy-700 text-[27px] sm:text-[38px] leading-snug">まずは30分、<br>今の集客を整理しませんか？</h2>
+        <p class="mt-4 text-[13.5px] sm:text-[15px] text-navy-500 leading-loose">売り込みではなく、現在の掲載費・予約経路・リピート課題を整理する無料相談です。</p>
+        <ul class="mt-4 grid sm:grid-cols-3 gap-2 text-[11.5px] font-bold text-navy-600">
+          <li class="rounded-xl bg-white/80 px-3 py-2.5">現状のボトルネック</li>
+          <li class="rounded-xl bg-white/80 px-3 py-2.5">導入の優先順位</li>
+          <li class="rounded-xl bg-white/80 px-3 py-2.5">費用と期間の目安</li>
+        </ul>
+
+        <form id="consultation-form" name="salon-consultation" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-7 space-y-3 scroll-mt-24">
+          <input type="hidden" name="form-name" value="salon-consultation">
+          <p class="hidden"><label>入力しないでください <input name="bot-field"></label></p>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="block">
+              <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">サロン名</span>
+              <input name="salon" autocomplete="organization" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300" placeholder="例）〇〇 hair">
+            </label>
+            <label class="block">
+              <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">お名前</span>
+              <input name="name" autocomplete="name" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300" placeholder="例）山田 太郎">
+            </label>
+          </div>
+          <label class="block">
+            <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">ご連絡先メールアドレス</span>
+            <input type="email" name="email" autocomplete="email" inputmode="email" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300" placeholder="example@salon.jp">
+          </label>
+          <label class="block">
+            <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">一番近いお悩み</span>
+            <select name="challenge" class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300">
+              <option>ポータルサイトの固定費を見直したい</option>
+              <option>新規客のリピート率を上げたい</option>
+              <option>予約前の電話・問い合わせを減らしたい</option>
+              <option>自社集客・AI検索対策を始めたい</option>
+              <option>まずは話を聞いてみたい</option>
+            </select>
+          </label>
+          <button type="submit" class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-salmon-400 px-8 py-4 text-[15px] font-black text-white shadow-lift hover:bg-salmon-500 transition-colors">
+            無料相談を申し込む
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="text-center text-[10.5px] text-navy-400">入力内容を確認後、通常2営業日以内にご連絡します。</p>
+        </form>
       </div>
     </div>
   </div>
@@ -1247,6 +1363,13 @@
     </div>
   </div>
 </footer>
+
+<div class="mobile-cta-bar sm:hidden fixed inset-x-0 bottom-0 z-40 bg-white/95 backdrop-blur border-t border-navy-700/10 px-4 pt-3">
+  <div class="grid grid-cols-[.8fr_1.2fr] gap-2 max-w-md mx-auto">
+    <a href="#concierge-chat" class="inline-flex items-center justify-center rounded-full border border-navy-700/20 px-3 py-3 text-[12.5px] font-black text-navy-700">AIを体験</a>
+    <a href="#consultation-form" class="inline-flex items-center justify-center rounded-full bg-salmon-400 px-3 py-3 text-[12.5px] font-black text-white shadow-soft">30分の無料相談</a>
+  </div>
+</div>
 
 <script defer>
 document.addEventListener('DOMContentLoaded', function () {
