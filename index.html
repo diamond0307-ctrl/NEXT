@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Next Design | 美容室の集客インフラを、AI時代仕様にアップデート。</title>
-<meta name="description" content="ホットペッパー、Instagram、LINE。今ある集客を活かしながら、AIコンシェルジュと専用LPで、美容室のこれからの集客基盤を一緒につくるNext Design。">
-<meta name="theme-color" content="#FFF8F2">
+<title>Next Design｜Instagramの先に、ちゃんと売れる場所を。LP制作78,000円</title>
+<meta name="description" content="Instagramの発信を、ちゃんと売れる場所へ。構成設計・文章整理・オリジナルデザイン・スマートフォン対応・公開サポートまでを78,000円（税込）で。Next DesignのLP制作サービス。">
+<meta name="theme-color" content="#1B120C">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Next Design | 美容室の集客インフラを、AI時代仕様にアップデート。">
-<meta property="og:description" content="今ある集客を活かしながら、AIコンシェルジュと専用LPで、これからの集客基盤を一緒につくります。">
+<meta property="og:title" content="Instagramの先に、ちゃんと売れる場所を。｜Next Design LP制作">
+<meta property="og:description" content="構成設計・文章整理・オリジナルデザイン・スマートフォン対応・公開サポートまでを78,000円（税込）で。Next DesignのLP制作サービス。">
 <meta property="og:image" content="assets/logo-cropped.png">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho:wght@500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/images/hero-stylist.png">
+<link rel="preload" as="image" href="assets/images/hero-bg.jpg">
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -28,8 +28,9 @@
         colors: {
           navy: { 50:'#EEF1F4',100:'#DCE2E8',200:'#B9C3CE',300:'#8996A8',400:'#5B6C81',500:'#3F5268',600:'#2F425A', 700:'#26374A', 800:'#1B2A3B', 900:'#14233B' },
           cream: { DEFAULT:'#FFF1D6', 50:'#FFFDFC', 100:'#FFF8F2', 200:'#FFF1D6' },
-          salmon: { 100:'#FDE3DE', 200:'#FAC7BE', 300:'#F7A99C', 400:'#F47F72', 500:'#E8695B', 600:'#D14F41' },
-          coralpink: { 100:'#FCEAEE', 200:'#F8C9D3', 300:'#F6B7C4', 400:'#F4A7B5', 500:'#E8899B' },
+          salmon: { 100:'#F7DEE6', 200:'#EFBBCE', 300:'#D6789B', 400:'#AD2F5B', 500:'#9D244F', 600:'#7D1D3F' },
+          pink: { 50:'#FDF2F8', 100:'#FCE4F1', 200:'#F9BEE0', 300:'#F472B6', 400:'#F0299A', 500:'#D81C82', 600:'#B01669' },
+          coralpink: { 100:'#FDE4D6', 200:'#FBC9AD', 300:'#F79868', 400:'#F26829', 500:'#D95A1F' },
           yellow: { 100:'#FFF7DD', 200:'#FFECAF', 300:'#FFE18F', 400:'#FFD978', 500:'#F5C749' },
           sky: { 100:'#EAF7FC', 200:'#D6EFF9', 300:'#BCE5F5', 400:'#9BD6EE', 500:'#6FC0E2' },
           mint: { 100:'#EEF7F1', 200:'#DDEFE3', 300:'#CFE8D6', 400:'#B7DCC1', 500:'#96CBA6' },
@@ -46,12 +47,7 @@
           card: '0 2px 0 rgba(38,55,74,0.04), 0 16px 34px -20px rgba(38,55,74,0.22)',
         },
         borderRadius: { '2xl': '1.25rem', '3xl': '1.75rem', '4xl': '2.5rem' },
-        keyframes: {
-          floatY: { '0%,100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-8px)' } },
-          blink: { '0%,100%': { opacity: .25 }, '50%': { opacity: 1 } },
-          wiggle: { '0%,100%': { transform: 'rotate(-3deg)' }, '50%': { transform: 'rotate(3deg)' } },
-        },
-        animation: { floatY: 'floatY 6s ease-in-out infinite', wiggle: 'wiggle 3.6s ease-in-out infinite' },
+        keyframes: { blink: { '0%,100%': { opacity: .25 }, '50%': { opacity: 1 } } },
       },
     },
   }
@@ -68,46 +64,19 @@
 
   .reveal{ opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1); }
   .reveal.is-visible{ opacity: 1; transform: translateY(0); }
-  .reveal-left{ opacity:0; transform: translateX(-44px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1); }
-  .reveal-left.is-visible{ opacity:1; transform: translateX(0); }
-  .reveal-right{ opacity:0; transform: translateX(44px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.7,.3,1); }
-  .reveal-right.is-visible{ opacity:1; transform: translateX(0); }
   .reveal-scale{ opacity:0; transform: scale(.94); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.3,1); }
   .reveal-scale.is-visible{ opacity:1; transform: scale(1); }
-  .reveal-delay-1{ transition-delay: .08s; } .reveal-delay-2{ transition-delay: .16s; }
-  .reveal-delay-3{ transition-delay: .26s; } .reveal-delay-4{ transition-delay: .36s; }
 
   .kb-wrap{ overflow:hidden; }
   .kb-img{ transform: scale(1.12); transition: transform 3.2s cubic-bezier(.16,.8,.2,1); will-change: transform; }
   .kb-wrap.is-visible .kb-img{ transform: scale(1); }
 
-  .chip-check{ display:inline-flex; align-items:center; justify-content:center; }
   .typing-dot{ animation: blink 1.4s ease-in-out infinite; }
   .typing-dot:nth-child(2){ animation-delay: .2s; } .typing-dot:nth-child(3){ animation-delay: .4s; }
-
-  .brush-underline{ position:relative; display:inline-block; }
-  .brush-underline svg{ position:absolute; left:-2%; bottom:-.14em; width:104%; height:.5em; }
-
-  .draw-path{ stroke-dasharray: 2000; stroke-dashoffset: 2000; transition: stroke-dashoffset 2s cubic-bezier(.16,.8,.2,1); }
-  .draw-path.is-visible{ stroke-dashoffset: 0; }
   .draw-path-fast{ stroke-dasharray: 500; stroke-dashoffset: 500; transition: stroke-dashoffset 1.4s cubic-bezier(.16,.8,.2,1) .2s; }
   .draw-path-fast.is-visible{ stroke-dashoffset: 0; }
 
-  .donut-arc{ stroke-dasharray: 251; stroke-dashoffset: 251; transition: stroke-dashoffset 1.6s cubic-bezier(.16,.8,.2,1) .1s; }
-  .donut-arc.is-visible{ stroke-dashoffset: var(--donut-offset, 0); }
-
-  .grow-bar{ transform: scaleY(0); transform-origin: bottom; transition: transform 1s cubic-bezier(.2,.8,.3,1); }
-  .grow-bar.is-visible{ transform: scaleY(1); }
-
-  .phone-frame{ box-shadow: 0 30px 70px -20px rgba(20,35,59,.35), 0 0 0 10px #1B2A3B, 0 0 0 12px rgba(255,255,255,.08); }
-
-  .bg-number{ font-family:'DM Sans',sans-serif; font-weight:900; letter-spacing:-.03em; color:#14233B; opacity:.045; pointer-events:none; user-select:none; line-height:.8; }
-
   .blob{ border-radius: 42% 58% 65% 35% / 45% 40% 60% 55%; }
-
-  .leader-dot{ position:absolute; width:9px; height:9px; border-radius:999px; background:#F47F72; box-shadow:0 0 0 4px rgba(244,127,114,.25); }
-
-  .divider-curve{ display:block; width:100%; height:auto; }
 
   .mobile-cta-bar{ padding-bottom: max(.75rem, env(safe-area-inset-bottom)); }
   @media (max-width: 639px){
@@ -116,71 +85,136 @@
     .concierge-shell{ height:min(620px,72svh) !important; min-height:540px; }
   }
 
+  /* ---- Approach section badge: speech-bubble shape on mobile ---- */
+  .approach-badge{ position: relative; }
+  @media (max-width: 639px){
+    .approach-badge{
+      transform: none !important;
+      border-width: 2px !important;
+      border-color: #14233B !important;
+      border-radius: 18px !important;
+    }
+    .approach-badge::after{
+      content: '';
+      position: absolute;
+      left: 24px;
+      bottom: -9px;
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      border-left: 2px solid #14233B;
+      border-bottom: 2px solid #14233B;
+      border-bottom-left-radius: 6px;
+      transform: rotate(-45deg);
+    }
+  }
+
   /* ---- Opening brand animation ---- */
   html.opening-lock-scroll, html.opening-lock-scroll body{ overflow:hidden; height:100%; }
-
-  .opening-overlay{
-    position: fixed; inset: 0; z-index: 9999;
-    display: flex; align-items: center; justify-content: center;
-    background: #FFF8F2;
-    background-image: radial-gradient(circle at 50% 42%, rgba(244,127,114,0.05), transparent 60%);
-    transition: opacity .65s ease;
-  }
+  .opening-overlay{ position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; background:#FFF8F2; transition:opacity .55s ease; }
   .opening-overlay[hidden]{ display:none; }
-  .opening-overlay.is-hidden{ opacity: 0; pointer-events: none; }
+  .opening-overlay.is-hidden{ opacity:0; pointer-events:none; }
+  .opening-skip{ position:absolute; top:20px; right:20px; font:700 12px 'Noto Sans JP',sans-serif; color:#5B6C81; background:transparent; border:1px solid rgba(38,55,74,.2); border-radius:999px; padding:8px 18px; cursor:pointer; }
+  .opening-skip:focus-visible{ outline:2px solid #AD2F5B; outline-offset:3px; }
+  .opening-center{ text-align:center; padding:0 24px; }
+  .opening-logo{ width:min(300px,72vw); height:auto; display:block; margin:0 auto; opacity:0; transform:translateY(8px); transition:opacity .8s ease, transform .8s ease; }
+  .opening-stroke{ fill:#1B2A47; stroke:none; }
+  .opening-group-tail,.opening-group-underline{ fill:url(#opening-underline-gradient); }
+  .opening-tagline{ margin-top:20px; font:600 13px 'Shippori Mincho',serif; letter-spacing:.14em; color:#5B6C81; opacity:0; transition:opacity .65s ease .25s; }
+  .opening-overlay.logo-visible .opening-logo,.opening-overlay.logo-visible .opening-tagline{ opacity:1; transform:none; }
+  @media (prefers-reduced-motion:reduce){ .opening-overlay,.opening-logo,.opening-tagline{ transition-duration:.01ms !important; } }
 
-  .opening-skip{
-    position: absolute; top: 20px; right: 20px; z-index: 2;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 12px; font-weight: 700; letter-spacing: .06em;
-    color: #5B6C81; background: transparent; border: 1px solid rgba(38,55,74,.2);
-    border-radius: 999px; padding: 8px 18px; cursor: pointer;
-    transition: color .2s ease, border-color .2s ease, background-color .2s ease;
+  /* ---- LP Hero (LP制作サービス) ---- */
+  .hero-lp{
+    --ink: #1E1712;
+    --pink: #F0299A;
+    --pink-deep: #D81C82;
+    position: relative;
+    overflow: hidden;
+    min-height: 100svh;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 96px;
+    padding-bottom: clamp(28px, 9vw, 56px);
   }
-  @media (min-width: 640px){ .opening-skip{ top: 28px; right: 28px; } }
-  .opening-skip:hover{ color:#26374A; border-color: rgba(38,55,74,.4); background: rgba(38,55,74,.04); }
-  .opening-skip:focus-visible{ outline: 2px solid #F47F72; outline-offset: 3px; }
-
-  .opening-center{ position: relative; text-align: center; padding: 0 24px; }
-
-  .opening-logo{ width: min(280px, 68vw); height: auto; display: block; margin: 0 auto; overflow: visible; }
-  @media (min-width: 640px){ .opening-logo{ width: min(360px, 34vw); } }
-
-  .opening-stroke{
-    fill: none;
-    stroke: #1B2A47;
-    stroke-width: 150;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  .hero-lp__media{ position: absolute; inset: 0; }
+  .hero-lp__img{ width: 100%; height: 100%; object-fit: cover; object-position: 48% 38%; }
+  .hero-lp__overlay{
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(255,250,240,.18) 0%, rgba(255,247,236,.64) 24%, rgba(255,245,233,.70) 100%);
   }
-  .opening-group-tail, .opening-group-underline{ stroke: url(#opening-underline-gradient); }
+  .hero-lp__panel{ max-width: 30rem; }
+  .hero-lp__headline{
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.32;
+    font-size: clamp(1.6rem, 1rem + 3.6vw, 2.9rem);
+    letter-spacing: -.01em;
+  }
+  .hero-lp__offer{
+    margin-top: clamp(1.1rem, 3vw, 1.6rem);
+    display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: .5em .6em;
+    background: rgba(27,18,12,.90);
+    border-radius: 20px;
+    padding: .85em 1.1em;
+  }
+  .hero-lp__service-name{
+    font-weight: 800; color: var(--pink);
+    font-size: clamp(1.3rem, 1.02rem + 1.4vw, 1.8rem);
+  }
+  .hero-lp__price-amount{
+    font-weight: 800; color: #fff;
+    font-family: 'DM Sans', 'Noto Sans JP', sans-serif;
+    font-size: clamp(1.85rem, 1.15rem + 3.4vw, 2.9rem);
+  }
+  .hero-lp__price-unit{ font-weight: 800; color: #fff; font-size: clamp(1.05rem, .9rem + .8vw, 1.4rem); margin-left: .1em; }
+  .hero-lp__price-tax{ font-weight: 600; color: rgba(255,255,255,.78); font-size: clamp(.72rem, .65rem + .3vw, .82rem); }
+  .hero-lp__list{
+    margin-top: clamp(.9rem, 3vw, 1.35rem);
+    display: grid; gap: .5em;
+    font-weight: 600; color: var(--ink);
+    font-size: clamp(.85rem, .78rem + .3vw, .95rem);
+  }
+  .hero-lp__list li{ display: flex; align-items: center; gap: .6em; }
+  .hero-lp__list li::before{ content:''; width: .38em; height: .38em; border-radius: 999px; background: var(--ink); opacity: .55; flex-shrink: 0; }
+  .hero-lp__actions{ margin-top: clamp(1.35rem, 4vw, 1.9rem); display: flex; flex-wrap: wrap; gap: .7em; }
+  .hero-lp__btn{
+    display: inline-flex; align-items: center; justify-content: center; gap: .5em;
+    border-radius: 999px; white-space: nowrap;
+    font-weight: 800; font-size: clamp(.85rem, .8rem + .25vw, .95rem);
+    padding: 1em 1.7em;
+    transition: background-color .2s ease, transform .2s ease, border-color .2s ease;
+  }
+  .hero-lp__btn--primary{ background: var(--pink); color: #fff; box-shadow: 0 14px 30px -14px rgba(216,28,130,.55); }
+  .hero-lp__btn--primary:hover{ background: var(--pink-deep); }
+  .hero-lp__btn--secondary{ background: rgba(40,34,28,.42); color: #fff; border: 1px solid rgba(255,255,255,.35); }
+  .hero-lp__btn--secondary:hover{ background: rgba(40,34,28,.58); }
+  .hero-lp__btn svg{ flex-shrink: 0; }
 
-  .opening-overlay.is-drawn .opening-stroke{
-    fill: #1B2A47;
-    transition: fill .4s ease;
+  @media (min-width: 1024px){
+    .hero-lp{
+      min-height: 0;
+      height: clamp(680px, 92vh, 880px);
+      align-items: center;
+      padding-top: 70px;
+      padding-bottom: 0;
+    }
+    .hero-lp__img{ object-position: 50% 46%; }
+    .hero-lp__overlay{
+      background: linear-gradient(100deg, rgba(255,248,238,.80) 0%, rgba(255,246,235,.64) 32%, rgba(255,246,235,0) 58%);
+    }
+    .hero-lp__panel{ max-width: 40rem; }
   }
-  .opening-overlay.is-drawn .opening-group-tail,
-  .opening-overlay.is-drawn .opening-group-underline{
-    fill: url(#opening-underline-gradient);
+  @media (max-width: 639px){
+    .hero-lp{ padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
   }
 
-  .opening-tagline{
-    margin-top: 22px;
-    font-family: 'Shippori Mincho', serif;
-    font-size: 13.5px;
-    letter-spacing: .14em;
-    color: #5B6C81;
-    opacity: 0;
-    transform: translateY(6px);
-    transition: opacity .7s ease, transform .7s ease;
-  }
-  .opening-overlay.tagline-visible .opening-tagline{ opacity: 1; transform: translateY(0); }
-
-  @media (prefers-reduced-motion: reduce){
-    .opening-overlay{ transition: opacity .3s ease !important; }
-    .opening-stroke{ transition: none !important; }
-    .opening-tagline{ transition: opacity .3s ease !important; transform: none !important; }
-  }
+  /* ---- Approach: crown badges ---- */
+  .crown-badge{ position: relative; width: 100%; aspect-ratio: 1 / 1; margin-top: 14%; }
+  .crown-badge__crown{ position: absolute; top: 0; left: 50%; width: 34%; height: auto; transform: translate(-50%, -62%); z-index: 2; filter: drop-shadow(0 3px 4px rgba(0,0,0,.25)); }
+  .crown-badge__circle{ position: absolute; inset: 0; border-radius: 50%; background: #171717; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 22px -10px rgba(0,0,0,.45); }
+  .crown-badge__dash{ position: absolute; inset: 9%; border-radius: 50%; border: 1.5px dashed rgba(255,255,255,.55); pointer-events: none; }
+  .crown-badge__label{ position: relative; z-index: 1; color: #fff; font-weight: 700; text-align: center; line-height: 1.3; padding: 0 15%; font-size: clamp(.68rem, .58rem + .5vw, .8125rem); }
 </style>
 </head>
 
@@ -239,17 +273,15 @@
     </a>
 
     <nav class="hidden lg:flex items-center gap-8 text-[13.5px] font-medium text-navy-600" aria-label="サイト内ナビゲーション">
-      <a href="#offer" class="hover:text-salmon-500 transition-colors">サービスについて</a>
-      <a href="#shift" class="hover:text-salmon-500 transition-colors">集客導線の考え方</a>
-      <a href="#numbers" class="hover:text-salmon-500 transition-colors">改善イメージ</a>
-      <a href="#pricing" class="hover:text-salmon-500 transition-colors">料金・比較</a>
-      <a href="#flow" class="hover:text-salmon-500 transition-colors">導入の流れ</a>
-      <a href="#faq" class="hover:text-salmon-500 transition-colors">よくあるご質問</a>
+      <a href="#approach" class="hover:text-pink-500 transition-colors">サービス内容</a>
+      <a href="#works" class="hover:text-pink-500 transition-colors">制作イメージ</a>
+      <a href="#concierge" class="hover:text-pink-500 transition-colors">AIコンシェルジュ</a>
+      <a href="#approach" class="hover:text-pink-500 transition-colors">納品後サポート</a>
     </nav>
 
     <div class="hidden lg:flex items-center gap-3">
-      <a href="#concierge-demo" class="inline-flex items-center gap-1.5 text-navy-700 text-[13.5px] font-bold hover:text-salmon-500 transition-colors">AIを体験する</a>
-      <a href="#cta-final" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-salmon-400 text-white text-[13.5px] font-bold hover:bg-salmon-500 transition-colors shadow-softer">無料相談する</a>
+      <a href="#concierge-chat" class="inline-flex items-center gap-1.5 text-navy-700 text-[13.5px] font-bold hover:text-pink-500 transition-colors">AIに質問する</a>
+      <a href="#consultation-form" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-pink-400 text-white text-[13.5px] font-bold hover:bg-pink-500 transition-colors shadow-softer">お申し込みはこちら</a>
     </div>
 
     <button id="menu-btn" type="button" class="lg:hidden p-2 -mr-2 text-navy-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
@@ -260,15 +292,13 @@
 
   <div id="mobile-menu" class="hidden lg:hidden relative bg-cream-100 border-b border-navy-700/10 shadow-soft">
     <nav class="flex flex-col px-6 py-5 gap-1 text-navy-700 font-medium" aria-label="モバイルナビゲーション">
-      <a href="#offer" class="py-3 border-b border-navy-700/5">サービスについて</a>
-      <a href="#shift" class="py-3 border-b border-navy-700/5">集客導線の考え方</a>
-      <a href="#numbers" class="py-3 border-b border-navy-700/5">改善イメージ</a>
-      <a href="#pricing" class="py-3 border-b border-navy-700/5">料金・比較</a>
-      <a href="#flow" class="py-3 border-b border-navy-700/5">導入の流れ</a>
-      <a href="#faq" class="py-3 border-b border-navy-700/5">よくあるご質問</a>
+      <a href="#approach" class="py-3 border-b border-navy-700/5">サービス内容</a>
+      <a href="#works" class="py-3 border-b border-navy-700/5">制作イメージ</a>
+      <a href="#concierge" class="py-3 border-b border-navy-700/5">AIコンシェルジュ</a>
+      <a href="#approach" class="py-3 border-b border-navy-700/5">納品後サポート</a>
       <div class="flex flex-col gap-3 mt-4">
-        <a href="#concierge-demo" class="text-center px-5 py-3 rounded-full border border-navy-700/20 font-semibold">AIを体験する</a>
-        <a href="#cta-final" class="text-center px-5 py-3 rounded-full bg-salmon-400 text-white font-semibold">無料相談する</a>
+        <a href="#concierge-chat" class="text-center px-5 py-3 rounded-full border border-navy-700/20 font-semibold">AIに質問する</a>
+        <a href="#consultation-form" class="text-center px-5 py-3 rounded-full bg-pink-400 text-white font-semibold">お申し込みはこちら</a>
       </div>
     </nav>
   </div>
@@ -277,505 +307,194 @@
 <main id="main">
 
 <!-- ============================================================ -->
-<!-- HERO                                                          -->
+<!-- HERO — LP制作サービス                                         -->
 <!-- ============================================================ -->
-<section id="hero" class="relative pt-[110px] pb-16 sm:pb-20 overflow-hidden bg-cream-100">
-  <div aria-hidden="true" class="blob absolute -top-24 -right-32 w-[420px] h-[420px] bg-yellow-200/70 blur-[2px]"></div>
-  <div aria-hidden="true" class="blob absolute bottom-0 -left-28 w-[320px] h-[320px] bg-coralpink-200/60 blur-[2px]"></div>
-
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-6 lg:items-center">
-
-      <!-- copy: ~45% -->
-      <div class="lg:col-span-5 relative z-10 order-1 reveal">
-        <p class="font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-4">FOR BEAUTY SALON OWNERS</p>
-        <h1 class="tracking-tight">
-          <span class="block font-black text-navy-700 text-[28px] sm:text-[40px] leading-[1.3]">新規は来る。<br>でも、次につながらない。</span>
-          <span class="block font-black text-salmon-400 text-[39px] sm:text-[64px] leading-[1.12] mt-3">その集客を、</span>
-          <span class="block font-black text-navy-700 text-[31px] sm:text-[48px] leading-[1.25] mt-1">自社の資産へ。</span>
-        </h1>
-        <p class="mt-6 text-[15px] sm:text-[16px] leading-[1.9] text-navy-500 max-w-md">
-          ポータルサイトをやめる提案ではありません。今ある集客を活かしながら、予約前の不安に24時間答えるAIコンシェルジュと専用LPで、価格だけで選ばれない導線をつくります。
-        </p>
-
-        <ul class="mt-5 flex flex-wrap gap-2 text-[11.5px] font-bold text-navy-600" aria-label="よくある集客課題">
-          <li class="rounded-full bg-white/85 border border-navy-700/10 px-3 py-2">固定費が重い</li>
-          <li class="rounded-full bg-white/85 border border-navy-700/10 px-3 py-2">クーポン客が定着しない</li>
-          <li class="rounded-full bg-white/85 border border-navy-700/10 px-3 py-2">電話対応を減らしたい</li>
-        </ul>
-
-        <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <a href="#cta-final" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-salmon-400 text-white text-[15px] font-bold shadow-lift hover:bg-salmon-500 transition-colors">
-            30分の無料相談を予約する
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#concierge-demo" class="inline-flex items-center gap-1.5 text-navy-700 text-[14.5px] font-bold underline decoration-2 decoration-yellow-400 underline-offset-4 hover:text-salmon-500 transition-colors">
-            AIを体験する
-          </a>
-        </div>
-      </div>
-
-      <!-- photo: ~55%, illustrated speech-bubble annotations -->
-      <div class="lg:col-span-7 relative order-2 reveal-scale">
-        <div class="relative -mx-5 sm:-mx-8 lg:mx-0 lg:mr-[-3rem] xl:mr-[-5rem]">
-          <div class="kb-wrap relative aspect-[4/5] lg:rounded-l-[3rem] overflow-hidden shadow-lift">
-            <img class="kb-img w-full h-full object-cover object-[50%_18%]" src="assets/images/hero-stylist.png" alt="明るい美容室でお客様を迎える女性スタイリスト" width="1122" height="1402" loading="eager" fetchpriority="high" decoding="async">
-          </div>
-
-          <!-- illustrated speech bubble: 24h -->
-          <div class="absolute top-6 left-3 sm:left-6 reveal reveal-delay-2">
-            <div class="relative bg-yellow-300 rounded-full w-[92px] h-[92px] sm:w-[104px] sm:h-[104px] flex flex-col items-center justify-center shadow-lift rotate-[-6deg]">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-              <span class="text-[13px] font-black text-navy-800 mt-0.5">24時間</span>
-              <span class="text-[9px] font-bold text-navy-700/70">相談OK</span>
-            </div>
-          </div>
-
-          <!-- illustrated speech bubble: AI instant answer -->
-          <div class="absolute top-6 right-3 sm:right-8 reveal reveal-delay-3">
-            <div class="relative bg-white rounded-2xl rounded-tr-sm px-4 py-3 shadow-lift max-w-[160px]">
-              <div class="flex items-center gap-2 mb-1">
-                <span class="flex items-center justify-center w-6 h-6 rounded-full bg-sky-300 shrink-0">
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.8"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg>
-                </span>
-                <span class="text-[11px] font-black text-navy-700">AIが即回答</span>
-              </div>
-              <p class="text-[10.5px] text-navy-500 leading-snug">質問に答えて、予約へつなぐ</p>
-            </div>
-          </div>
-
-          <!-- hand-drawn arrow + label: booking -->
-          <div class="absolute bottom-8 right-3 sm:right-10 reveal reveal-delay-4">
-            <div class="bg-salmon-400 text-white rounded-2xl rounded-br-sm px-4 py-3 shadow-lift max-w-[150px]">
-              <p class="text-[12px] font-black leading-snug">予約へ、<br>まっすぐつなぐ。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<section id="hero" class="hero-lp">
+  <div class="hero-lp__media kb-wrap">
+    <img class="hero-lp__img kb-img" src="assets/images/hero-bg.jpg" alt="タブレットでSNS投稿のデザインを作成する様子" width="1366" height="768" loading="eager" fetchpriority="high" decoding="async">
   </div>
+  <div class="hero-lp__overlay" aria-hidden="true"></div>
 
-  <!-- transition strip into empathy -->
-  <div class="relative mt-8 sm:mt-10">
-    <svg width="22" height="34" viewBox="0 0 20 34" fill="none" stroke="#F47F72" stroke-width="1.6" class="mx-auto reveal"><path d="M10 2v26M3 21l7 7 7-7"/></svg>
-  </div>
-</section>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="hero-lp__panel reveal">
+      <h1 class="hero-lp__headline">
+        <span class="block">Instagramの先に</span>
+        <span class="block">ちゃんと売れる場所を</span>
+      </h1>
 
-<!-- ============================================================ -->
-<!-- 経営負担への共感 → バラバラな集客の統合                       -->
-<!-- ============================================================ -->
-<section class="relative bg-cream-100 overflow-hidden pt-10 pb-20 sm:pb-28">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8">
-
-    <!-- 1. 導入 -->
-    <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-20 reveal">
-      <h2 class="font-black text-navy-700 text-[26px] sm:text-[42px] leading-[1.35]">
-        でも最近、<br>
-        集客のための<span class="text-salmon-500">「固定費」</span>と<span class="text-sky-600">「やること」</span>ばかり、<br>
-        増えていませんか？
-      </h2>
-    </div>
-
-    <!-- 2. 一番大きな固定費 -->
-    <div class="relative max-w-2xl mx-auto text-center mb-16 sm:mb-24 reveal-scale">
-      <span aria-hidden="true" class="bg-number absolute -top-8 left-1/2 -translate-x-1/2 text-[100px] sm:text-[160px] select-none">¥</span>
-      <p class="relative font-accent font-black text-salmon-400 text-[64px] sm:text-[104px] leading-none tracking-tight">20<span class="text-[0.4em] align-top">万円以上</span></p>
-      <p class="relative mt-1 text-[16px] sm:text-[20px] font-black text-navy-700">まず大きいのは、ポータルサイトの掲載費。</p>
-      <p class="relative mt-4 text-[13.5px] sm:text-[15px] text-navy-500 leading-relaxed">
-        プランを下げて、新規予約が減るのも不安。<br>だから、疑問を感じながらも払い続けている。
-      </p>
-    </div>
-
-    <!-- 3. さらに増えていく負担（横長・編集的、均等カードにしない） -->
-    <p class="reveal text-center text-[13px] font-bold tracking-wide text-navy-400 mb-8">しかも、必要なのは掲載費だけではありません。</p>
-    <div class="space-y-5 sm:space-y-6 max-w-4xl mx-auto">
-      <!-- A. SNS -->
-      <div class="reveal bg-coralpink-100 rounded-[2rem] p-6 sm:p-8 sm:mr-10 lg:mr-28">
-        <div class="flex items-start sm:items-center gap-5 sm:gap-7">
-          <svg viewBox="0 0 64 64" class="w-16 h-16 sm:w-20 sm:h-20 shrink-0" aria-hidden="true">
-            <rect x="10" y="16" width="34" height="30" rx="6" fill="#fff" stroke="#26374A" stroke-width="1.6"/>
-            <circle cx="27" cy="31" r="8" fill="#F6B7C4" stroke="#26374A" stroke-width="1.4"/>
-            <circle cx="36" cy="22" r="1.6" fill="#26374A"/>
-            <rect x="36" y="26" width="20" height="26" rx="9" fill="#F4A7B5" stroke="#26374A" stroke-width="1.4"/>
-            <rect x="42" y="34" width="8" height="8" rx="2" fill="#fff" stroke="#26374A" stroke-width="1.2"/>
-          </svg>
-          <div>
-            <h3 class="font-black text-navy-700 text-[18px] sm:text-[21px] leading-snug mb-2">さらに、SNSも続けなければならない。</h3>
-            <p class="text-[13.5px] sm:text-[14.5px] text-navy-600 leading-relaxed">撮影、投稿、リール、文章。営業をしながら続けるには、大きな負担がかかる。</p>
-          </div>
-        </div>
+      <div class="hero-lp__offer">
+        <span class="hero-lp__service-name">LP制作</span>
+        <span class="hero-lp__price-amount">78,000</span><span class="hero-lp__price-unit">円</span>
+        <span class="hero-lp__price-tax">（税込）</span>
       </div>
 
-      <!-- B. HP / LP -->
-      <div class="reveal reveal-delay-1 bg-yellow-100 rounded-[2rem] p-6 sm:p-8 sm:ml-10 lg:ml-28">
-        <div class="flex items-start sm:items-center gap-5 sm:gap-7">
-          <svg viewBox="0 0 64 64" class="w-16 h-16 sm:w-20 sm:h-20 shrink-0" aria-hidden="true">
-            <rect x="8" y="12" width="40" height="30" rx="3" fill="#fff" stroke="#26374A" stroke-width="1.6"/>
-            <rect x="8" y="12" width="40" height="7" rx="3" fill="#FFE18F" stroke="#26374A" stroke-width="1.2"/>
-            <rect x="14" y="26" width="20" height="2.6" rx="1.3" fill="#E9D48A"/>
-            <rect x="14" y="32" width="14" height="2.6" rx="1.3" fill="#E9D48A"/>
-            <rect x="46" y="34" width="14" height="14" rx="4" fill="#F5C749" stroke="#26374A" stroke-width="1.4"/>
-            <path d="M53 38v3.6M53 44.4v.1M49.5 41.2h.1M56.5 41.2h.1" stroke="#26374A" stroke-width="1.4" stroke-linecap="round"/>
-          </svg>
-          <div>
-            <h3 class="font-black text-navy-700 text-[18px] sm:text-[21px] leading-snug mb-2">ホームページも、作って終わりではない。</h3>
-            <p class="text-[13.5px] sm:text-[14.5px] text-navy-600 leading-relaxed">制作費に加え、メニューやスタッフ情報の更新、保守や修正にも費用がかかる。</p>
-          </div>
-        </div>
-      </div>
+      <ul class="hero-lp__list">
+        <li>構成設計</li>
+        <li>文章整理</li>
+        <li>オリジナルデザイン</li>
+        <li>スマートフォン対応</li>
+        <li>公開サポート</li>
+      </ul>
 
-      <!-- C. 電話・問い合わせ対応 -->
-      <div class="reveal reveal-delay-2 bg-sky-100 rounded-[2rem] p-6 sm:p-8 sm:mr-10 lg:mr-28">
-        <div class="flex items-start sm:items-center gap-5 sm:gap-7">
-          <svg viewBox="0 0 64 64" class="w-16 h-16 sm:w-20 sm:h-20 shrink-0" aria-hidden="true">
-            <circle cx="24" cy="30" r="16" fill="#fff" stroke="#26374A" stroke-width="1.6"/>
-            <path d="M18 24c1 6 5 10 11 11" stroke="#26374A" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-            <path d="M32 38l6 8-4 4c-6-1-12-7-13-13l4-4z" fill="#9BD6EE" stroke="#26374A" stroke-width="1.4" stroke-linejoin="round"/>
-            <rect x="42" y="10" width="16" height="20" rx="3" fill="#26374A"/>
-            <circle cx="50" cy="16" r="3.4" fill="#fff"/>
-            <path d="M46 25h8" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
-          </svg>
-          <div>
-            <h3 class="font-black text-navy-700 text-[18px] sm:text-[21px] leading-snug mb-2">問い合わせに答える人も必要になる。</h3>
-            <p class="text-[13.5px] sm:text-[14.5px] text-navy-600 leading-relaxed">施術中の電話、営業時間外の問い合わせ、予約変更やメニュー相談。対応するために受付スタッフを置けば、さらに人件費がかかる。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 4. 感情をまとめる -->
-    <div class="mt-20 sm:mt-28 grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-      <div class="lg:col-span-6 order-2 lg:order-1 reveal-left">
-        <p class="font-black text-navy-700 text-[24px] sm:text-[34px] leading-snug mb-5">
-          集客のために、<br>お金を払い、時間を使い、<br>人まで増やす。
-        </p>
-        <p class="text-[15px] sm:text-[17px] text-navy-500 font-bold">それでも、新規予約が安定するとは限りません。</p>
-      </div>
-
-      <div class="lg:col-span-6 order-1 lg:order-2 relative reveal-scale">
-        <div class="-mx-5 sm:-mx-8 lg:mx-0">
-          <div class="kb-wrap relative aspect-[4/5] lg:rounded-[3rem] overflow-hidden shadow-lift">
-            <img class="kb-img w-full h-full object-cover object-[50%_30%]" src="assets/images/owner-thinking.png" alt="スマートフォンで予約状況を確認しながら集客について考える美容室オーナー" width="1122" height="1402" loading="lazy" decoding="async">
-          </div>
-
-          <div class="hidden sm:block absolute top-8 right-[-2rem] reveal reveal-delay-1">
-            <div class="bg-white rounded-2xl px-4 py-2.5 shadow-card rotate-2">
-              <p class="text-[12px] font-bold text-navy-600">掲載費</p>
-            </div>
-          </div>
-          <div class="hidden sm:block absolute top-28 left-[-2rem] reveal reveal-delay-2">
-            <div class="bg-coralpink-100 rounded-2xl px-4 py-2.5 shadow-card -rotate-2">
-              <p class="text-[12px] font-bold text-navy-600">SNS運用</p>
-            </div>
-          </div>
-          <div class="hidden sm:block absolute top-1/2 -translate-y-1/2 right-[-2.25rem] reveal reveal-delay-3">
-            <div class="bg-yellow-200 rounded-2xl px-4 py-2.5 shadow-card rotate-3">
-              <p class="text-[12px] font-bold text-navy-700">Web保守</p>
-            </div>
-          </div>
-          <div class="hidden sm:block absolute bottom-28 left-[-2rem] reveal reveal-delay-4">
-            <div class="bg-sky-100 rounded-2xl px-4 py-2.5 shadow-card -rotate-2">
-              <p class="text-[12px] font-bold text-navy-600">電話対応</p>
-            </div>
-          </div>
-          <div class="hidden sm:block absolute bottom-10 right-[-1.75rem] reveal reveal-delay-4">
-            <div class="bg-mint-100 rounded-2xl px-4 py-2.5 shadow-card rotate-2">
-              <p class="text-[12px] font-bold text-navy-600">人件費</p>
-            </div>
-          </div>
-
-          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 sm:left-4 sm:translate-x-0 reveal reveal-delay-2">
-            <div class="bg-navy-700 text-white rounded-2xl px-5 py-3 shadow-lift rotate-1 max-w-[220px] sm:max-w-[200px]">
-              <p class="text-[13px] font-black leading-snug">「このまま、今の集客だけでいいのかな。」</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5. 根本原因 -->
-    <div class="mt-24 sm:mt-32 max-w-2xl mx-auto text-center reveal">
-      <h3 class="font-black text-navy-700 text-[24px] sm:text-[36px] leading-snug mb-6">問題は、<br class="sm:hidden">一つひとつのサービスではありません。</h3>
-      <p class="text-[14px] sm:text-[16px] text-navy-600 leading-loose mb-7">
-        ホットペッパーが悪いわけでも、Instagramが悪いわけでも、ホームページが不要なわけでもありません。<br><br>
-        問題は、集客、発信、問い合わせ、予約が、すべてバラバラになっていること。
-      </p>
-      <p class="font-serif text-[19px] sm:text-[24px] text-salmon-500 leading-relaxed">
-        バラバラだから、それぞれに費用がかかり、<br>それぞれを動かす人が必要になる。
-      </p>
-    </div>
-
-    <!-- 6. BEFORE 図解 -->
-    <div class="mt-24 sm:mt-32">
-      <p class="text-center text-[12px] font-black tracking-widest text-navy-400 mb-3 reveal">BEFORE</p>
-      <h3 class="text-center font-black text-navy-700 text-[20px] sm:text-[26px] leading-snug mb-12 reveal">バラバラで、負担が集中している状態</h3>
-
-      <div class="hidden md:block relative max-w-3xl mx-auto h-[420px] reveal-scale">
-        <svg viewBox="0 0 600 420" class="absolute inset-0 w-full h-full" aria-hidden="true">
-          <g fill="none" stroke="#F47F72" stroke-width="2" stroke-linecap="round" opacity="0.55">
-            <path d="M300,210 L120,70"/><path d="M300,210 L300,50"/><path d="M300,210 L480,70"/>
-            <path d="M300,210 L110,210"/><path d="M300,210 L490,210"/>
-            <path d="M300,210 L120,350"/><path d="M300,210 L300,380"/><path d="M300,210 L480,350"/>
-          </g>
-        </svg>
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full bg-navy-700 text-white flex flex-col items-center justify-center text-center shadow-lift z-10 px-2">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFF8F2" stroke-width="1.8" class="mb-1"><circle cx="12" cy="8" r="4"/><path d="M4 20c1-4.5 4-7 8-7s7 2.5 8 7"/></svg>
-          <span class="text-[10.5px] font-black leading-tight">費用も、仕事も、<br>増えていく。</span>
-        </div>
-
-        <div class="absolute left-[8%] top-[6%] flex flex-col items-center gap-1.5 w-[120px] text-center"><span class="w-11 h-11 rounded-full bg-salmon-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="3" y="5" width="18" height="13" rx="2"/></svg></span><span class="text-[11px] font-bold text-navy-600">ポータル掲載費</span></div>
-        <div class="absolute left-1/2 -translate-x-1/2 top-0 flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-coralpink-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span><span class="text-[11px] font-bold text-navy-600">SNS投稿</span></div>
-        <div class="absolute right-[8%] top-[6%] flex flex-col items-center gap-1.5 w-[120px] text-center"><span class="w-11 h-11 rounded-full bg-yellow-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.4"/></svg></span><span class="text-[11px] font-bold text-navy-600">写真・動画制作</span></div>
-
-        <div class="absolute left-0 top-1/2 -translate-y-1/2 flex flex-col items-center gap-1.5 w-[120px] text-center"><span class="w-11 h-11 rounded-full bg-yellow-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="2.5"/></svg></span><span class="text-[11px] font-bold text-navy-600">HP制作・保守</span></div>
-        <div class="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-mint-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M3 11l18-7-7 18-2.5-7.5L3 11z"/></svg></span><span class="text-[11px] font-bold text-navy-600">広告</span></div>
-
-        <div class="absolute left-[8%] bottom-[4%] flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-sky-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg></span><span class="text-[11px] font-bold text-navy-600">電話対応</span></div>
-        <div class="absolute left-1/2 -translate-x-1/2 bottom-0 flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-salmon-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.8-3.6 3-5.5 6-5.5s5.2 1.9 6 5.5"/><circle cx="18" cy="9" r="2.6"/><path d="M14.8 20c.5-2.8 2-4.3 4-4.3"/></svg></span><span class="text-[11px] font-bold text-navy-600">受付人件費</span></div>
-        <div class="absolute right-[8%] bottom-[4%] flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-mint-100 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M4 4h13a3 3 0 013 3v8a3 3 0 01-3 3H10l-5 4v-4H4a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg></span><span class="text-[11px] font-bold text-navy-600">LINE管理</span></div>
-      </div>
-
-      <!-- mobile: stacked chips converging visually -->
-      <div class="md:hidden max-w-sm mx-auto">
-        <div class="flex flex-wrap justify-center gap-2 mb-6">
-          <span class="bg-salmon-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">ポータル掲載費</span>
-          <span class="bg-coralpink-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">SNS投稿</span>
-          <span class="bg-yellow-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">写真・動画制作</span>
-          <span class="bg-yellow-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">HP制作・保守</span>
-          <span class="bg-mint-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">広告</span>
-          <span class="bg-sky-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">電話対応</span>
-          <span class="bg-salmon-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">受付人件費</span>
-          <span class="bg-mint-100 text-navy-600 text-[11.5px] font-bold rounded-full px-3.5 py-2">LINE管理</span>
-        </div>
-        <div class="flex justify-center">
-          <svg width="20" height="30" viewBox="0 0 20 30" fill="none" stroke="#F47F72" stroke-width="2"><path d="M10 2v20M3 16l7 7 7-7"/></svg>
-        </div>
-        <div class="mt-4 mx-auto w-28 h-28 rounded-full bg-navy-700 text-white flex flex-col items-center justify-center text-center shadow-lift px-2">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFF8F2" stroke-width="1.8" class="mb-1"><circle cx="12" cy="8" r="4"/><path d="M4 20c1-4.5 4-7 8-7s7 2.5 8 7"/></svg>
-          <span class="text-[10.5px] font-black leading-tight">費用も、仕事も、<br>増えていく。</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- 7. 解決への転換 -->
-    <div class="mt-24 sm:mt-32 max-w-2xl mx-auto text-center reveal">
-      <h3 class="font-black text-navy-700 text-[24px] sm:text-[36px] leading-snug mb-6">集客に必要なものを、<br>一つのチームと、一つの導線へ。</h3>
-      <p class="text-[14px] sm:text-[16px] text-navy-600 leading-loose mb-8">
-        Next Designは、サイトを作るだけでも、AIを導入するだけでもありません。<br>
-        SNS、Web、問い合わせ、予約、改善までをつなぎ、美容室の集客全体を設計・運用します。
-      </p>
-      <p class="bg-navy-700 text-white rounded-[1.75rem] px-6 py-6 sm:px-9 sm:py-8 text-[15px] sm:text-[18px] font-black leading-relaxed shadow-lift">
-        固定費をもう一つ増やすサービスではありません。<br>
-        今払っている集客費の配分を見直し、<br class="sm:hidden">自社に残る集客基盤へ<br class="hidden sm:block">少しずつ移していくサービスです。
-      </p>
-    </div>
-
-    <!-- 8. AFTER 図解 -->
-    <div class="mt-16 sm:mt-20">
-      <div class="flex justify-center mb-6 reveal">
-        <svg width="20" height="30" viewBox="0 0 20 30" fill="none" stroke="#96CBA6" stroke-width="2.4"><path d="M10 2v20M3 16l7 7 7-7"/></svg>
-      </div>
-      <p class="text-center text-[12px] font-black tracking-widest text-mint-600 mb-3 reveal">AFTER</p>
-      <h3 class="text-center font-black text-navy-700 text-[20px] sm:text-[26px] leading-snug mb-10 reveal">一本につながっている状態</h3>
-
-      <div class="relative bg-navy-700 rounded-[2rem] sm:rounded-[2.5rem] p-7 sm:p-12 text-white reveal-scale">
-        <p class="text-center text-[11.5px] sm:text-[12.5px] font-bold tracking-wide text-mint-200 mb-8">Next Designがまとめて設計・運用</p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-2 flex-wrap">
-          <div class="flex flex-col items-center gap-2 w-[110px]">
-            <span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#F6B7C4" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span>
-            <span class="text-[10.5px] font-bold text-white/85 text-center leading-tight">Instagram・広告・検索</span>
-          </div>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD978" stroke-width="2" class="rotate-90 sm:rotate-0 shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          <div class="flex flex-col items-center gap-2 w-[100px]">
-            <span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FFE18F" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="2.5"/></svg></span>
-            <span class="text-[10.5px] font-bold text-white/85">専用LP</span>
-          </div>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD978" stroke-width="2" class="rotate-90 sm:rotate-0 shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          <div class="flex flex-col items-center gap-2 w-[110px]">
-            <span class="w-14 h-14 rounded-full bg-sky-300 flex items-center justify-center shadow-lift"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg></span>
-            <span class="text-[10.5px] font-black text-white text-center leading-tight">AIコンシェルジュ</span>
-          </div>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD978" stroke-width="2" class="rotate-90 sm:rotate-0 shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          <div class="flex flex-col items-center gap-2 w-[100px]">
-            <span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#CFE8D6" stroke-width="1.6"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9h16M9 3v3M15 3v3"/></svg></span>
-            <span class="text-[10.5px] font-bold text-white/85">予約・LINE</span>
-          </div>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD978" stroke-width="2" class="rotate-90 sm:rotate-0 shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          <div class="flex flex-col items-center gap-2 w-[100px]">
-            <span class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#F7A99C" stroke-width="1.6"><path d="M4 19V10M11 19V5M18 19v-7"/></svg></span>
-            <span class="text-[10.5px] font-bold text-white/85">分析・改善</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- shift diagram (moved here from its previous position right after the old empathy block) -->
-    <div id="shift" class="relative mt-24 sm:mt-32 scroll-mt-24">
-      <div class="text-center mb-14 reveal">
-        <p class="font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-3">THE SHIFT</p>
-        <h2 class="font-black text-navy-700 text-[28px] sm:text-[42px] leading-tight">集客は「探す」から<br class="sm:hidden">「相談する」時代へ。</h2>
-      </div>
-
-      <div class="reveal reveal-delay-1 space-y-10">
-        <div>
-          <p class="text-center text-[12px] font-bold tracking-widest text-navy-400 mb-5">これまで</p>
-          <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 opacity-70">
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-softer px-5 py-4 w-[100px]">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-navy-400"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-              <span class="text-[11px] font-semibold text-navy-500">検索</span>
-            </div>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-navy-300 shrink-0" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-softer px-5 py-4 w-[112px]">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-navy-400"><rect x="3" y="5" width="18" height="13" rx="2"/><path d="M3 9h18"/></svg>
-              <span class="text-[11px] font-semibold text-navy-500 text-center leading-tight">ホームページ<br>ポータル</span>
-            </div>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-navy-300 shrink-0" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-softer px-5 py-4 w-[100px]">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-navy-400"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9h16M9 3v3M15 3v3"/></svg>
-              <span class="text-[11px] font-semibold text-navy-500">予約</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex items-center justify-center gap-3 text-navy-400">
-          <span class="h-px w-16 bg-navy-200"></span>
-          <span class="text-[11px] font-bold tracking-widest">これから</span>
-          <span class="h-px w-16 bg-navy-200"></span>
-        </div>
-
-        <div>
-          <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-soft px-4 py-4 w-[88px] sm:w-[104px]">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-coralpink-500"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
-              <span class="text-[10px] font-semibold text-navy-600">Instagram</span>
-            </div>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F47F72" stroke-width="1.8" class="shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-soft px-4 py-4 w-[88px] sm:w-[104px]">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-navy-500"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-              <span class="text-[10px] font-semibold text-navy-600">Google検索</span>
-            </div>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F47F72" stroke-width="1.8" class="shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <div class="flex flex-col items-center gap-2 bg-sky-300 rounded-2xl shadow-lift px-5 py-5 w-[100px] sm:w-[118px] -translate-y-1">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15l-1.9-4.1L5.5 9l4.6-1.4L12 3z"/></svg>
-              <span class="text-[11px] font-bold text-navy-800">AI検索・相談</span>
-            </div>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F47F72" stroke-width="1.8" class="shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-soft px-4 py-4 w-[88px] sm:w-[104px]">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-navy-500"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg>
-              <span class="text-[10px] font-semibold text-navy-600">AI<br>コンシェルジュ</span>
-            </div>
-          </div>
-
-          <div class="flex justify-center my-2">
-            <svg width="20" height="34" viewBox="0 0 20 34" fill="none" stroke="#FFD978" stroke-width="2.4"><path d="M10 2v26M3 21l7 7 7-7"/></svg>
-          </div>
-
-          <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-soft px-4 py-4 w-[88px] sm:w-[104px]">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-navy-500"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9h16M9 3v3M15 3v3"/></svg>
-              <span class="text-[10px] font-semibold text-navy-600">予約</span>
-            </div>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F47F72" stroke-width="1.8" class="shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <div class="flex flex-col items-center gap-2 bg-white rounded-2xl shadow-soft px-4 py-4 w-[88px] sm:w-[104px]">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="text-navy-500"><path d="M4 4h13a3 3 0 013 3v8a3 3 0 01-3 3H10l-5 4v-4H4a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg>
-              <span class="text-[10px] font-semibold text-navy-600">LINE</span>
-            </div>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F47F72" stroke-width="1.8" class="shrink-0"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            <div class="flex flex-col items-center gap-2 bg-mint-300 rounded-2xl shadow-soft px-4 py-4 w-[88px] sm:w-[104px]">
-              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M12 21s-7.5-4.9-10-9.4C.5 8 2 4.5 5.6 4a4.9 4.9 0 016.4 2 4.9 4.9 0 016.4-2c3.6.5 5.1 4 3.6 7.6-2.5 4.5-10 9.4-10 9.4z"/></svg>
-              <span class="text-[10px] font-semibold text-navy-700">リピート</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p class="reveal reveal-delay-2 text-center mt-12 text-[13.5px] sm:text-[15px] text-navy-500 font-bold">「予約する前に、相談したい。」そんなお客様が、増えています。</p>
-    </div>
-
-    <!-- connector into the AI concierge live demo -->
-    <div class="mt-24 sm:mt-32 max-w-xl mx-auto text-center reveal">
-      <p class="text-[14px] sm:text-[16px] text-navy-600 leading-loose mb-4">
-        その中でも、<br>予約前の問い合わせと電話対応を変えるのが、<br>AIコンシェルジュです。
-      </p>
-      <p class="font-serif text-[17px] sm:text-[20px] text-navy-700 leading-relaxed mb-3">
-        電話するほどではない。<br>でも、予約前に少し聞いておきたい。
-      </p>
-      <p class="text-[14px] sm:text-[16px] font-black text-salmon-500">
-        その小さな疑問に、AIが24時間答えます。
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- AIコンシェルジュ / 専用LP / 集客導線                          -->
-<!-- ============================================================ -->
-<section id="offer" class="relative bg-white overflow-hidden pt-20 sm:pt-28 pb-24 sm:pb-32 scroll-mt-20">
-  <span aria-hidden="true" class="bg-number absolute top-4 right-2 sm:right-10 text-[110px] sm:text-[220px] select-none leading-none">AI</span>
-
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative">
-    <div class="text-center mb-16 reveal">
-      <p class="font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-3">ONE CONNECTED EXPERIENCE</p>
-      <h2 class="font-black text-navy-700 text-[28px] sm:text-[42px] leading-tight">今ある集客をつなぎ、<br class="sm:hidden">もう一歩先の未来へ。</h2>
-    </div>
-
-    <!-- AI Concierge — live, operable demo -->
-    <div id="concierge-demo" class="grid lg:grid-cols-12 gap-10 lg:gap-8 items-start scroll-mt-24">
-      <div class="lg:col-span-5 reveal-left">
-        <p class="font-accent text-sky-500 text-[11px] tracking-[0.2em] font-bold mb-3">AI CONCIERGE LIVE DEMO</p>
-        <h3 class="font-black text-navy-700 text-[26px] sm:text-[34px] leading-snug mb-4">予約前の「ちょっと聞きたい」を、<br>今ここで体験してください。</h3>
-        <p class="text-[14px] sm:text-[15.5px] leading-loose text-navy-500 mb-8 max-w-md">
-          電話をするほどではないけれど、予約する前に確認しておきたいこと。AIコンシェルジュなら、24時間その場で回答し、自然に予約までご案内します。
-        </p>
-
-        <a href="#concierge-chat" class="lg:hidden mb-6 w-full inline-flex items-center justify-center gap-2 rounded-full bg-sky-200 px-5 py-3.5 text-[14px] font-black text-navy-800 shadow-softer">
-          質問を選んで、30秒体験
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      <div class="hero-lp__actions">
+        <a href="#consultation-form" class="hero-lp__btn hero-lp__btn--primary">
+          お申し込みはこちら
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
+        <a href="#consultation-form" class="hero-lp__btn hero-lp__btn--secondary">
+          お問い合わせ
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="relative max-w-sm mx-auto lg:max-w-none lg:mx-0 hidden lg:block">
+<!-- ============================================================ -->
+<!-- 制作実績・イメージ                                            -->
+<!-- ============================================================ -->
+<section id="works" class="relative bg-white py-20 sm:py-28 scroll-mt-20">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-xl reveal">
+      <p class="text-[13px] font-bold text-pink-500">Works Image</p>
+      <h2 class="mt-3 font-black text-navy-700 text-[26px] sm:text-[38px] leading-[1.5]">こんな世界観のLPを、<br>一緒につくれます。</h2>
+      <p class="mt-5 text-[14px] sm:text-[15.5px] leading-loose text-navy-500">業種やお店の雰囲気に合わせて、写真の見せ方と伝える順番を一つずつ設計します。</p>
+    </div>
+
+    <div class="mt-12 sm:mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+      <div class="reveal group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-softer">
+        <img class="w-full h-full object-cover object-[68%_14%]" src="assets/images/work-sample-dental-clinic.jpg" alt="歯科クリニックの施術メニューと料金を丁寧に伝えるLP" loading="lazy" decoding="async" width="941" height="1672">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-navy-900/0 to-transparent"></div>
+        <p class="absolute left-3 right-3 bottom-3 text-white text-[11.5px] sm:text-[12.5px] font-bold leading-snug">施術メニューを丁寧に</p>
+      </div>
+      <div class="reveal group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-softer">
+        <img class="w-full h-full object-cover object-[50%_12%]" src="assets/images/work-sample-restaurant.jpg" alt="夜景を背景にした高級レストランの世界観を伝えるLP" loading="lazy" decoding="async" width="853" height="1844">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-navy-900/0 to-transparent"></div>
+        <p class="absolute left-3 right-3 bottom-3 text-white text-[11.5px] sm:text-[12.5px] font-bold leading-snug">お店の雰囲気を、そのまま</p>
+      </div>
+      <div class="reveal group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-softer">
+        <img class="w-full h-full object-cover object-[25%_32%]" src="assets/images/work-sample-interior-brand.jpg" alt="ミニマルなインテリアブランドの世界観を伝えるLP" loading="lazy" decoding="async" width="853" height="1844">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-navy-900/0 to-transparent"></div>
+        <p class="absolute left-3 right-3 bottom-3 text-white text-[11.5px] sm:text-[12.5px] font-bold leading-snug">ブランドの世界観を、丁寧に</p>
+      </div>
+      <div class="reveal group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-softer">
+        <img class="w-full h-full object-cover object-[50%_15%]" src="assets/images/ai-concierge-customer.png" alt="スマートフォンでAIコンシェルジュに質問するお客様" loading="lazy" decoding="async" width="1122" height="1402">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-900/70 via-navy-900/0 to-transparent"></div>
+        <p class="absolute left-3 right-3 bottom-3 text-white text-[11.5px] sm:text-[12.5px] font-bold leading-snug">AIコンシェルジュ搭載も</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- Next Designの考え方・強み / 提供内容                          -->
+<!-- ============================================================ -->
+<section id="approach" class="relative bg-cream-100 py-20 sm:py-28 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <span class="approach-badge inline-flex items-center rounded-full bg-white border border-navy-700/15 px-4 py-2 text-[12px] font-black text-navy-700 shadow-softer -rotate-2">だから安心</span>
+      <h2 class="mt-5 font-black text-navy-700 text-[26px] sm:text-[38px] leading-[1.55]">ただ作るのではなく、<br>伝わる順番から<br>一緒に考えます。</h2>
+      <div class="mt-6 space-y-2 text-[14px] sm:text-[15.5px] leading-loose text-navy-500">
+        <p>見た目だけではなく、伝わる導線まで整えます。</p>
+        <p>発信の先にある「申し込みにつながる場所」を、一緒につくります。</p>
+      </div>
+      <div class="mt-5 pt-4 border-t border-navy-700/10 flex items-start gap-1.5 text-[11.5px] sm:text-[12.5px] leading-relaxed text-navy-400">
+        <svg class="shrink-0 mt-[.15em]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+        <span>納品後3ヶ月間は、修正・ご相談を無償でフォローいたします。</span>
+      </div>
+    </div>
+
+    <div class="mt-12 sm:mt-16 grid grid-cols-3 sm:grid-cols-6 gap-3 sm:gap-6">
+      <div class="reveal crown-badge">
+        <svg class="crown-badge__crown -rotate-6" viewBox="0 0 100 70" aria-hidden="true"><path d="M8,62 L8,32 L26,48 L50,16 L74,48 L92,32 L92,62 Z" fill="#F6C846" stroke="#B8862A" stroke-width="3" stroke-linejoin="round"/><circle cx="8" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="50" cy="11" r="8" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="92" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/></svg>
+        <div class="crown-badge__circle">
+          <span class="crown-badge__dash" aria-hidden="true"></span>
+          <span class="crown-badge__label">ヒアリング</span>
+        </div>
+      </div>
+      <div class="reveal crown-badge">
+        <svg class="crown-badge__crown rotate-3" viewBox="0 0 100 70" aria-hidden="true"><path d="M8,62 L8,32 L26,48 L50,16 L74,48 L92,32 L92,62 Z" fill="#F6C846" stroke="#B8862A" stroke-width="3" stroke-linejoin="round"/><circle cx="8" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="50" cy="11" r="8" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="92" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/></svg>
+        <div class="crown-badge__circle">
+          <span class="crown-badge__dash" aria-hidden="true"></span>
+          <span class="crown-badge__label">構成設計</span>
+        </div>
+      </div>
+      <div class="reveal crown-badge">
+        <svg class="crown-badge__crown rotate-6" viewBox="0 0 100 70" aria-hidden="true"><path d="M8,62 L8,32 L26,48 L50,16 L74,48 L92,32 L92,62 Z" fill="#F6C846" stroke="#B8862A" stroke-width="3" stroke-linejoin="round"/><circle cx="8" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="50" cy="11" r="8" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="92" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/></svg>
+        <div class="crown-badge__circle">
+          <span class="crown-badge__dash" aria-hidden="true"></span>
+          <span class="crown-badge__label">言葉の編集</span>
+        </div>
+      </div>
+      <div class="reveal crown-badge">
+        <svg class="crown-badge__crown -rotate-3" viewBox="0 0 100 70" aria-hidden="true"><path d="M8,62 L8,32 L26,48 L50,16 L74,48 L92,32 L92,62 Z" fill="#F6C846" stroke="#B8862A" stroke-width="3" stroke-linejoin="round"/><circle cx="8" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="50" cy="11" r="8" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="92" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/></svg>
+        <div class="crown-badge__circle">
+          <span class="crown-badge__dash" aria-hidden="true"></span>
+          <span class="crown-badge__label">オリジナル<br>デザイン</span>
+        </div>
+      </div>
+      <div class="reveal crown-badge">
+        <svg class="crown-badge__crown rotate-2" viewBox="0 0 100 70" aria-hidden="true"><path d="M8,62 L8,32 L26,48 L50,16 L74,48 L92,32 L92,62 Z" fill="#F6C846" stroke="#B8862A" stroke-width="3" stroke-linejoin="round"/><circle cx="8" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="50" cy="11" r="8" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="92" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/></svg>
+        <div class="crown-badge__circle">
+          <span class="crown-badge__dash" aria-hidden="true"></span>
+          <span class="crown-badge__label">スマート<br>フォン対応</span>
+        </div>
+      </div>
+      <div class="reveal crown-badge">
+        <svg class="crown-badge__crown -rotate-2" viewBox="0 0 100 70" aria-hidden="true"><path d="M8,62 L8,32 L26,48 L50,16 L74,48 L92,32 L92,62 Z" fill="#F6C846" stroke="#B8862A" stroke-width="3" stroke-linejoin="round"/><circle cx="8" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="50" cy="11" r="8" fill="#F6C846" stroke="#B8862A" stroke-width="3"/><circle cx="92" cy="27" r="7" fill="#F6C846" stroke="#B8862A" stroke-width="3"/></svg>
+        <div class="crown-badge__circle">
+          <span class="crown-badge__dash" aria-hidden="true"></span>
+          <span class="crown-badge__label">公開サポート</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- AIコンシェルジュ紹介                                          -->
+<!-- ============================================================ -->
+<section id="concierge" class="relative bg-cream-100 overflow-hidden pt-20 sm:pt-28 pb-16 sm:pb-20 scroll-mt-20">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl reveal">
+      <p class="text-[13px] font-bold text-pink-500 tracking-[0.1em]">AI CONCIERGE</p>
+      <p class="mt-1.5 font-black text-pink-500 text-[19px] sm:text-[25px] leading-none">AIコンシェルジュ</p>
+      <h2 class="mt-4 font-black text-navy-700 text-[26px] sm:text-[40px] leading-[1.5]">見るだけのLPから、<br>相談できるLPへ。</h2>
+      <p class="mt-5 text-[14px] sm:text-[15.5px] leading-loose text-navy-500">AIコンシェルジュを搭載すれば、料金、サービス内容、プラン、よくある質問などにLP上で回答できます。必要な場合は、人への相談や申し込みへつなぎます。</p>
+      <p class="mt-3 text-[10.5px] sm:text-[11.5px] leading-relaxed text-navy-400">※AIコンシェルジュの導入・運用には、LP制作費とは別に料金がかかります。</p>
+    </div>
+
+    <div class="mt-12 sm:mt-16 grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5 hidden lg:block reveal-scale">
+        <div class="relative">
           <div class="kb-wrap relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-lift">
-            <video
-              id="concierge-hero-video"
-              class="kb-img w-full h-full object-cover object-[50%_38%]"
-              src="assets/video/ai-concierge-demo.mp4"
-              poster="assets/images/ai-concierge-video-poster.jpg"
-              width="1280" height="720"
-              autoplay muted loop playsinline preload="metadata"
-              aria-label="スマートフォンのAIコンシェルジュが空き時間を提案し、そのまま予約を確定する操作イメージ"
-            ></video>
+            <img class="kb-img w-full h-full object-cover object-[50%_20%]" src="assets/images/ai-concierge-customer.png" alt="スマートフォンでAIコンシェルジュに質問するお客様" width="1122" height="1402" loading="lazy" decoding="async">
           </div>
-          <div class="absolute top-4 left-4 bg-yellow-300 rounded-full w-16 h-16 flex flex-col items-center justify-center shadow-card">
+          <div class="absolute top-4 left-4 bg-pink-100 rounded-full w-16 h-16 flex flex-col items-center justify-center shadow-card">
             <span class="text-[13px] font-black text-navy-800 leading-none">24H</span>
             <span class="text-[8px] font-bold text-navy-700/70 mt-0.5">対応</span>
           </div>
-          <div class="absolute bottom-4 right-4 bg-white rounded-2xl px-3.5 py-2.5 shadow-card flex items-center gap-2">
-            <span class="w-7 h-7 rounded-full bg-sky-200 flex items-center justify-center shrink-0">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            </span>
-            <span class="text-[11px] font-bold text-navy-700">約5秒で回答</span>
-          </div>
         </div>
       </div>
 
-      <div id="concierge-chat" class="lg:col-span-7 reveal-right mt-0 scroll-mt-24">
-        <p class="lg:hidden mb-3 text-center text-[12px] font-bold text-salmon-500">下の質問をタップするだけで体験できます</p>
-        <div class="concierge-shell rounded-[2rem] bg-cream-100 border border-navy-700/10 shadow-lift overflow-hidden flex flex-col" style="height:min(660px,78vh)">
+      <div id="concierge-chat" class="lg:col-span-7 scroll-mt-24">
+        <p class="lg:hidden mb-3 text-center text-[12px] font-bold text-pink-500">下の質問をタップするだけで体験できます</p>
+        <div class="concierge-shell rounded-[2rem] bg-white border border-navy-700/10 shadow-lift overflow-hidden flex flex-col" style="height:min(600px,74svh)">
           <!-- header -->
           <div class="flex items-center justify-between gap-3 px-5 py-4 bg-white border-b border-navy-700/10">
             <div class="flex items-center gap-2.5 min-w-0">
-              <span class="w-9 h-9 rounded-full bg-sky-200 flex items-center justify-center shrink-0">
+              <span class="w-9 h-9 rounded-full bg-pink-100 flex items-center justify-center shrink-0">
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.8"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg>
               </span>
               <div class="min-w-0">
-                <p class="text-[13px] font-black text-navy-700 truncate">LUMINA HAIR 福岡・AIコンシェルジュ</p>
+                <p class="text-[13px] font-black text-navy-700 truncate">Next Design・AIコンシェルジュ</p>
                 <p id="concierge-mode-badge" class="text-[10.5px] font-bold text-navy-400">起動中…</p>
               </div>
             </div>
-            <button type="button" id="concierge-reset-btn" class="shrink-0 text-[11.5px] font-bold text-navy-500 hover:text-salmon-500 underline underline-offset-2 transition-colors">最初から試す</button>
+            <button type="button" id="concierge-reset-btn" class="shrink-0 text-[11.5px] font-bold text-navy-500 hover:text-pink-500 underline underline-offset-2 transition-colors">最初から試す</button>
           </div>
 
-          <p class="px-5 pt-3 text-[10.5px] leading-relaxed text-navy-400">※こちらはAIコンシェルジュの体験用デモです。実際の店舗・空き時間・予約情報ではありません。</p>
+          <p class="px-5 pt-3 text-[10.5px] leading-relaxed text-navy-400">※こちらはAIコンシェルジュの体験用デモです。実際のご依頼内容によって回答は異なります。</p>
 
           <div id="concierge-log" class="flex-1 overflow-y-auto px-5 py-4 space-y-3 text-[13px] sm:text-[13.5px]" role="log" aria-live="polite" aria-relevant="additions"></div>
 
@@ -784,546 +503,105 @@
           <div class="border-t border-navy-700/10 bg-white p-3 sm:p-4">
             <form id="concierge-form" class="flex items-end gap-2" novalidate>
               <label for="concierge-input" class="sr-only">質問を入力</label>
-              <textarea id="concierge-input" rows="1" maxlength="300" placeholder="髪のお悩みや、予約前に聞きたいことを入力してください" class="flex-1 resize-none rounded-2xl border border-navy-700/15 px-4 py-3 text-[13.5px] leading-snug text-navy-700 placeholder:text-navy-400/70 focus:outline-none focus:ring-2 focus:ring-sky-300 max-h-[120px]"></textarea>
-              <button type="submit" id="concierge-send-btn" class="shrink-0 w-11 h-11 rounded-full bg-navy-700 text-white flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed transition-colors hover:bg-salmon-500" aria-label="送信" disabled>
+              <textarea id="concierge-input" rows="1" maxlength="300" placeholder="LP制作について気になることを入力してください" class="flex-1 resize-none rounded-2xl border border-navy-700/15 px-4 py-3 text-[13.5px] leading-snug text-navy-700 placeholder:text-navy-400/70 focus:outline-none focus:ring-2 focus:ring-pink-200 max-h-[120px]"></textarea>
+              <button type="submit" id="concierge-send-btn" class="shrink-0 w-11 h-11 rounded-full bg-navy-700 text-white flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed transition-colors hover:bg-pink-500" aria-label="送信" disabled>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </button>
             </form>
-            <p class="mt-2 text-[10px] text-navy-400 leading-relaxed">デモでは個人情報（氏名・電話番号・メールアドレス・住所・健康に関する詳細情報）を入力しないでください。</p>
+            <p class="mt-2 text-[10px] text-navy-400 leading-relaxed">デモでは個人情報（氏名・電話番号・メールアドレス・住所など）を入力しないでください。</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- booking demo modal -->
-    <div id="booking-modal" class="hidden fixed inset-0 z-[100] items-center justify-center px-5" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
-      <div id="booking-modal-backdrop" class="absolute inset-0 bg-navy-900/50 backdrop-blur-sm"></div>
-      <div class="relative bg-white rounded-[1.75rem] shadow-lift max-w-sm w-full p-7 text-center">
-        <div class="w-14 h-14 rounded-full bg-mint-200 flex items-center justify-center mx-auto mb-4">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9h16M9 3v3M15 3v3"/></svg>
-        </div>
-        <h3 id="booking-modal-title" class="font-black text-navy-700 text-[18px] mb-2">予約画面へ進むイメージです</h3>
-        <p class="text-[13px] text-navy-500 leading-relaxed mb-6">実際の導入時には、ホットペッパー、LINE、予約システムなど、現在お使いの予約先へ接続できます。</p>
-        <button type="button" id="booking-modal-close" class="w-full px-6 py-3 rounded-full bg-navy-700 text-white text-[14px] font-bold hover:bg-salmon-500 transition-colors">体験を続ける</button>
+  <!-- 申し込みイメージ用モーダル -->
+  <div id="booking-modal" class="hidden fixed inset-0 z-[100] items-center justify-center px-5" role="dialog" aria-modal="true" aria-labelledby="booking-modal-title">
+    <div id="booking-modal-backdrop" class="absolute inset-0 bg-navy-900/50 backdrop-blur-sm"></div>
+    <div class="relative bg-white rounded-[1.75rem] shadow-lift max-w-sm w-full p-7 text-center">
+      <div class="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center mx-auto mb-4">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </div>
-    </div>
-
-    <!-- 専用LP: photo with captions + screen mockup overlapping -->
-    <div class="grid lg:grid-cols-12 gap-10 items-center mt-24 sm:mt-32">
-      <div class="lg:col-span-7 relative reveal-scale">
-        <div class="-mx-5 sm:-mx-8 lg:mx-0 relative">
-          <div class="kb-wrap relative aspect-[4/3] lg:rounded-[2.5rem] overflow-hidden shadow-lift">
-            <img class="kb-img w-full h-full object-cover object-[65%_50%]" src="assets/images/haircut-detail.png" alt="お客様の髪を丁寧にカットする美容師の手元" width="1122" height="1402" loading="lazy" decoding="async">
-          </div>
-
-          <div class="absolute top-5 left-5 sm:left-8 reveal reveal-delay-1">
-            <p class="bg-white/95 backdrop-blur rounded-full px-4 py-2 text-[12px] sm:text-[13px] font-bold text-navy-700 shadow-card">Instagramでは、流れてしまう。</p>
-          </div>
-          <div class="absolute top-16 sm:top-20 left-5 sm:left-8 reveal reveal-delay-2">
-            <p class="bg-yellow-200/95 backdrop-blur rounded-full px-4 py-2 text-[12px] sm:text-[13px] font-bold text-navy-700 shadow-card">ポータルでは、違いが伝わらない。</p>
-          </div>
-
-          <!-- LP screen mockup overlapping the photo corner -->
-          <div class="hidden sm:block absolute -bottom-8 -right-6 w-[220px] rounded-2xl border border-navy-700/10 shadow-lift overflow-hidden bg-white rotate-2 reveal reveal-delay-3">
-            <div class="h-6 bg-cream-100 flex items-center gap-1.5 px-3">
-              <span class="w-1.5 h-1.5 rounded-full bg-navy-200"></span><span class="w-1.5 h-1.5 rounded-full bg-navy-200"></span><span class="w-1.5 h-1.5 rounded-full bg-navy-200"></span>
-            </div>
-            <div class="p-4 space-y-2">
-              <div class="h-2 w-3/4 rounded-full bg-navy-100"></div>
-              <div class="h-2 w-1/2 rounded-full bg-navy-100"></div>
-              <button type="button" class="w-full bg-salmon-400 text-white text-[10px] font-bold rounded-full py-2 mt-2">AIコンシェルジュに相談する</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="lg:col-span-5 reveal-left mt-16 sm:mt-10 lg:mt-0">
-        <p class="font-accent text-coralpink-500 text-[12px] tracking-[0.25em] font-bold mb-3">DEDICATED LANDING PAGE</p>
-        <h3 class="font-black text-navy-700 text-[26px] sm:text-[34px] leading-snug mb-6">お店の魅力を、<br>もっと伝えられる場所。</h3>
-        <p class="text-[14px] sm:text-[15.5px] text-navy-700 leading-relaxed font-bold">だからこそ、お店らしさをじっくり伝える「専用の受付ページ」が必要です。</p>
-      </div>
-    </div>
-
-    <!-- 集客導線 = collect-support map -->
-    <div class="mt-24 sm:mt-32 reveal">
-      <p class="text-center font-accent text-sky-500 text-[12px] tracking-[0.25em] font-bold mb-3">CHANNEL DESIGN</p>
-      <h3 class="text-center font-black text-navy-700 text-[24px] sm:text-[32px] leading-tight mb-4">集客サポートマップ</h3>
-      <p class="text-center text-[13px] sm:text-[14px] text-navy-500 mb-12 max-w-lg mx-auto">SNS・広告・LINEまで。バラバラだった導線を一つにつなぎ、トータルで伴走します。</p>
-
-      <!-- desktop radial map -->
-      <div class="hidden md:block relative max-w-3xl mx-auto h-[420px]">
-        <svg viewBox="0 0 600 420" class="absolute inset-0 w-full h-full" aria-hidden="true">
-          <g fill="none" stroke="#F7A99C" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 10">
-            <path d="M300,210 L120,70"/><path d="M300,210 L300,50"/><path d="M300,210 L480,70"/>
-            <path d="M300,210 L110,210"/><path d="M300,210 L490,210"/>
-            <path d="M300,210 L120,350"/><path d="M300,210 L300,380"/><path d="M300,210 L480,350"/>
-          </g>
-        </svg>
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full bg-gradient-to-br from-salmon-300 to-salmon-500 text-white flex items-center justify-center font-black text-[13px] text-center leading-tight shadow-lift z-10">あなたの<br>美容室</div>
-
-        <div class="absolute left-[8%] top-[6%] flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-coralpink-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span><span class="text-[11px] font-bold text-navy-600">Instagram</span></div>
-        <div class="absolute left-1/2 -translate-x-1/2 top-0 flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-sky-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15l-1.9-4.1L5.5 9l4.6-1.4L12 3z"/></svg></span><span class="text-[11px] font-bold text-navy-600">AI検索</span></div>
-        <div class="absolute right-[8%] top-[6%] flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-yellow-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="2.5"/></svg></span><span class="text-[11px] font-bold text-navy-600">専用LP</span></div>
-
-        <div class="absolute left-0 top-1/2 -translate-y-1/2 flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-mint-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M3 11l18-7-7 18-2.5-7.5L3 11z"/></svg></span><span class="text-[11px] font-bold text-navy-600">広告</span></div>
-        <div class="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-coralpink-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M4 4h13a3 3 0 013 3v8a3 3 0 01-3 3H10l-5 4v-4H4a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg></span><span class="text-[11px] font-bold text-navy-600">LINE</span></div>
-
-        <div class="absolute left-[8%] bottom-[4%] flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-sky-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg></span><span class="text-[11px] font-bold text-navy-600">AIコンシェルジュ</span></div>
-        <div class="absolute left-1/2 -translate-x-1/2 bottom-0 flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-yellow-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.4"/></svg></span><span class="text-[11px] font-bold text-navy-600">写真・動画</span></div>
-        <div class="absolute right-[8%] bottom-[4%] flex flex-col items-center gap-1.5 w-[110px] text-center"><span class="w-11 h-11 rounded-full bg-mint-200 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M4 19V10M11 19V5M18 19v-7"/></svg></span><span class="text-[11px] font-bold text-navy-600">改善分析</span></div>
-      </div>
-
-      <!-- mobile: single vertical story -->
-      <div class="md:hidden max-w-sm mx-auto space-y-3">
-        <div class="flex items-center gap-3 bg-coralpink-100 rounded-2xl px-4 py-3"><span class="w-9 h-9 rounded-full bg-white flex items-center justify-center shrink-0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span><span class="text-[13px] font-bold text-navy-700">Instagram</span></div>
-        <div class="flex items-center gap-3 bg-sky-100 rounded-2xl px-4 py-3"><span class="w-9 h-9 rounded-full bg-white flex items-center justify-center shrink-0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15l-1.9-4.1L5.5 9l4.6-1.4L12 3z"/></svg></span><span class="text-[13px] font-bold text-navy-700">AI検索</span></div>
-        <div class="flex items-center gap-3 bg-yellow-100 rounded-2xl px-4 py-3"><span class="w-9 h-9 rounded-full bg-white flex items-center justify-center shrink-0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="2.5"/></svg></span><span class="text-[13px] font-bold text-navy-700">専用LP</span></div>
-        <div class="flex items-center gap-3 bg-salmon-100 rounded-2xl px-4 py-3"><span class="w-9 h-9 rounded-full bg-white flex items-center justify-center shrink-0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg></span><span class="text-[13px] font-bold text-navy-700">AIコンシェルジュ</span></div>
-        <div class="flex items-center gap-3 bg-mint-100 rounded-2xl px-4 py-3"><span class="w-9 h-9 rounded-full bg-white flex items-center justify-center shrink-0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M4 4h13a3 3 0 013 3v8a3 3 0 01-3 3H10l-5 4v-4H4a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg></span><span class="text-[13px] font-bold text-navy-700">LINE</span></div>
-        <div class="flex items-center gap-3 bg-coralpink-100 rounded-2xl px-4 py-3"><span class="w-9 h-9 rounded-full bg-white flex items-center justify-center shrink-0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14233B" stroke-width="1.6"><path d="M4 19V10M11 19V5M18 19v-7"/></svg></span><span class="text-[13px] font-bold text-navy-700">改善分析</span></div>
-      </div>
+      <h3 id="booking-modal-title" class="font-black text-navy-700 text-[18px] mb-2">お申し込み画面へ進むイメージです</h3>
+      <p class="text-[13px] text-navy-500 leading-relaxed mb-6">実際の導入時には、フォームやLINEなど、ご希望の申し込み先へ接続できます。</p>
+      <button type="button" id="booking-modal-close" class="w-full px-6 py-3 rounded-full bg-navy-700 text-white text-[14px] font-bold hover:bg-pink-500 transition-colors">体験を続ける</button>
     </div>
   </div>
 </section>
 
 <!-- ============================================================ -->
-<!-- 数字で見る改善イメージ                                        -->
+<!-- AIコンシェルジュの流れ                                        -->
 <!-- ============================================================ -->
-<section id="numbers" class="relative bg-cream-100 overflow-hidden pt-24 sm:pt-32 pb-24 scroll-mt-20">
-  <div aria-hidden="true" class="blob absolute top-10 -right-24 w-[300px] h-[300px] bg-sky-200/50"></div>
-  <div aria-hidden="true" class="blob absolute bottom-0 -left-20 w-[260px] h-[260px] bg-mint-200/50"></div>
-
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 relative">
-    <div class="text-center mb-14 reveal">
-      <p class="font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-3">IMPACT SIMULATION</p>
-      <h2 class="font-black text-navy-700 text-[28px] sm:text-[42px] leading-tight">数字で見る、改善イメージ</h2>
-      <p class="mt-3 text-[12.5px] sm:text-[13px] text-navy-500">導入後に目指す改善イメージです。数値はシミュレーションであり、成果を保証するものではありません。</p>
-    </div>
-
-    <!-- headline trio: big number + illustration -->
-    <div class="grid sm:grid-cols-3 gap-6 mb-16 reveal reveal-delay-1">
-      <div class="bg-white rounded-3xl p-6 text-center shadow-soft">
-        <p class="font-accent font-black text-[56px] sm:text-[72px] leading-none text-salmon-400">24<span class="text-[0.4em] align-top">H</span></p>
-        <svg viewBox="0 0 90 46" class="mx-auto mt-2 w-20 h-auto" aria-hidden="true">
-          <circle cx="45" cy="14" r="11" fill="#FFE18F"/>
-          <path d="M40 12c1.5 1.5 2.5 2 5 2s4-1 5.5-2.5" stroke="#14233B" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-          <circle cx="41" cy="12" r="1.1" fill="#14233B"/><circle cx="49" cy="12" r="1.1" fill="#14233B"/>
-          <rect x="37" y="26" width="16" height="20" rx="4" fill="#26374A"/>
-          <rect x="40" y="30" width="10" height="12" rx="1.5" fill="#F47F72"/>
-        </svg>
-        <p class="mt-2 text-[12.5px] text-navy-500 font-bold">24時間、いつでも相談可能</p>
+<section id="concierge-flow" class="relative bg-white py-20 sm:py-28 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <div class="grid sm:grid-cols-3 gap-10 sm:gap-6">
+      <div class="reveal">
+        <p class="font-accent text-[36px] font-black text-pink-300">01</p>
+        <h3 class="mt-1 font-black text-[18px] sm:text-[20px] text-navy-700">回答</h3>
+        <p class="mt-3 text-[13.5px] sm:text-[14px] leading-loose text-navy-500">料金、プラン、制作内容、修正回数、制作の流れ、よくある質問などに回答します。</p>
       </div>
-      <div class="bg-white rounded-3xl p-6 text-center shadow-soft">
-        <p class="font-accent font-black text-[56px] sm:text-[72px] leading-none text-sky-500">5<span class="text-[0.4em] align-top">SEC</span></p>
-        <svg viewBox="0 0 90 46" class="mx-auto mt-2 w-20 h-auto" aria-hidden="true">
-          <path d="M14 30 Q10 12 28 12 Q30 6 36 8 Q34 14 30 16 Q40 18 38 30 Z" fill="#BCE5F5"/>
-          <path d="M52 14 Q56 8 64 12 Q66 6 70 10 Q68 16 64 16 Q74 16 74 28 Q74 34 66 34 L58 34 Q50 34 52 24 Z" fill="#F47F72"/>
-          <text x="63" y="26" font-size="9" fill="#fff" font-weight="700" text-anchor="middle" font-family="DM Sans">OK</text>
-        </svg>
-        <p class="mt-2 text-[12.5px] text-navy-500 font-bold">疑問にすばやく回答</p>
+      <div class="reveal" style="transition-delay:.08s">
+        <p class="font-accent text-[36px] font-black text-sky-300">02</p>
+        <h3 class="mt-1 font-black text-[18px] sm:text-[20px] text-navy-700">案内</h3>
+        <p class="mt-3 text-[13.5px] sm:text-[14px] leading-loose text-navy-500">質問内容をもとに、訪問者に合うサービスや次の行動を案内します。</p>
       </div>
-      <div class="bg-white rounded-3xl p-6 text-center shadow-soft">
-        <p class="font-accent font-black text-[56px] sm:text-[72px] leading-none text-mint-500">1<span class="text-[0.4em] align-top">FLOW</span></p>
-        <svg viewBox="0 0 100 40" class="mx-auto mt-2 w-24 h-auto" aria-hidden="true">
-          <path d="M6 30 Q30 6 50 22 Q70 38 94 12" fill="none" stroke="#CFE8D6" stroke-width="5" stroke-linecap="round"/>
-          <circle cx="6" cy="30" r="4" fill="#F4A7B5"/><circle cx="50" cy="22" r="4" fill="#FFD978"/><circle cx="94" cy="12" r="5" fill="#F47F72"/>
-        </svg>
-        <p class="mt-2 text-[12.5px] text-navy-500 font-bold">SNSから予約までを一つにつなぐ</p>
+      <div class="reveal" style="transition-delay:.16s">
+        <p class="font-accent text-[36px] font-black text-mint-400">03</p>
+        <h3 class="mt-1 font-black text-[18px] sm:text-[20px] text-navy-700">引き継ぎ</h3>
+        <p class="mt-3 text-[13.5px] sm:text-[14px] leading-loose text-navy-500">AIが答えられない質問や、個別の確認が必要な相談は、無理に回答せず人間へ引き継ぎます。</p>
       </div>
     </div>
-
-    <!-- 予約率改善: number-first illustrated line -->
-    <div class="bg-white rounded-[2rem] p-7 sm:p-10 shadow-soft mb-6 reveal reveal-delay-1">
-      <div class="grid sm:grid-cols-2 gap-6 items-center">
-        <div>
-          <p class="text-[13px] text-navy-500 font-bold mb-1">予約率の改善イメージ</p>
-          <p class="font-accent font-black text-salmon-400 text-[64px] sm:text-[96px] leading-none"><span class="count-up" data-count-to="32.4" data-suffix="%" data-prefix="+" data-decimals="1">0</span></p>
-        </div>
-        <div class="relative">
-          <svg viewBox="0 0 260 120" class="w-full h-auto" aria-hidden="true">
-            <path class="draw-path" d="M10,95 C 60,90 90,70 120,55 C 160,35 190,25 245,15" fill="none" stroke="#F47F72" stroke-width="5" stroke-linecap="round"/>
-            <circle cx="245" cy="15" r="7" fill="#F47F72"/>
-            <g transform="translate(215,-18)">
-              <circle cx="30" cy="20" r="11" fill="#FFE18F"/>
-              <path d="M25 20c1.5 1.5 2.5 2 5 2s4-1 5-2" stroke="#14233B" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-              <rect x="20" y="30" width="20" height="16" rx="6" fill="#26374A"/>
-            </g>
-          </svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid sm:grid-cols-2 gap-6 mb-6">
-      <!-- 取りこぼし削減: donut + clock/phone illustration -->
-      <div class="bg-white rounded-[2rem] p-7 shadow-soft reveal reveal-delay-2">
-        <p class="text-[13px] text-navy-500 font-bold mb-3">営業時間外の取りこぼし削減</p>
-        <div class="flex items-center gap-5">
-          <div class="relative w-24 h-24 shrink-0">
-            <svg viewBox="0 0 90 90" class="w-full h-full -rotate-90">
-              <circle cx="45" cy="45" r="40" fill="none" stroke="#EAF7FC" stroke-width="10"/>
-              <circle cx="45" cy="45" r="40" fill="none" stroke="#6FC0E2" stroke-width="10" stroke-linecap="round" class="donut-arc" style="--donut-offset:80.3" stroke-dasharray="251"/>
-            </svg>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <span class="font-accent font-black text-navy-700 text-[20px]">約<span class="count-up" data-count-to="68" data-suffix="%">0</span></span>
-            </div>
-          </div>
-          <svg viewBox="0 0 80 70" class="w-20 h-auto" aria-hidden="true">
-            <circle cx="30" cy="30" r="22" fill="#EAF7FC" stroke="#26374A" stroke-width="2"/>
-            <path d="M30 18v12l9 6" stroke="#26374A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-            <rect x="46" y="34" width="24" height="32" rx="5" fill="#26374A"/>
-            <rect x="49.5" y="38" width="17" height="20" rx="1.5" fill="#FFD978"/>
-          </svg>
-        </div>
-      </div>
-
-      <!-- 広告費最適化: bar + coin illustration -->
-      <div class="bg-white rounded-[2rem] p-7 shadow-soft reveal reveal-delay-3">
-        <p class="text-[13px] text-navy-500 font-bold mb-3">ホットペッパー掲載費の最適化イメージ</p>
-        <div class="flex items-end gap-5">
-          <p class="font-accent font-black text-navy-700 text-[40px] leading-none"><span class="count-up" data-count-to="38" data-suffix="%" data-prefix="-">0</span></p>
-          <div class="flex items-end gap-3 h-16">
-            <div class="grow-bar w-8 rounded-t-lg bg-navy-200" style="height:64px"></div>
-            <div class="grow-bar w-8 rounded-t-lg bg-salmon-400" style="height:40px; transition-delay:.15s"></div>
-          </div>
-          <svg viewBox="0 0 40 40" class="w-10 h-10 ml-auto" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="#FFD978" stroke="#14233B" stroke-width="1.6"/><text x="20" y="26" font-size="16" text-anchor="middle" fill="#14233B" font-weight="700" font-family="DM Sans">¥</text></svg>
-        </div>
-        <div class="flex gap-3 mt-1 pl-[3.2rem] text-[10px] text-navy-400 font-bold"><span>導入前</span><span class="ml-4">導入後</span></div>
-      </div>
-    </div>
-
-    <!-- リピート率向上: number-first illustrated line -->
-    <div class="bg-white rounded-[2rem] p-7 sm:p-10 shadow-soft reveal reveal-delay-4">
-      <div class="grid sm:grid-cols-2 gap-6 items-center">
-        <div>
-          <p class="text-[13px] text-navy-500 font-bold mb-1">リピート率の向上イメージ</p>
-          <p class="font-accent font-black text-mint-500 text-[64px] sm:text-[96px] leading-none"><span class="count-up" data-count-to="27.8" data-suffix="%" data-prefix="+" data-decimals="1">0</span></p>
-        </div>
-        <svg viewBox="0 0 260 120" class="w-full h-auto" aria-hidden="true">
-          <path class="draw-path" d="M10,90 C 60,88 100,60 140,50 C 180,40 200,30 245,20" fill="none" stroke="#96CBA6" stroke-width="5" stroke-linecap="round"/>
-          <g transform="translate(210,-8)">
-            <circle cx="35" cy="20" r="12" fill="#F4A7B5"/>
-            <path d="M29 20l4 4 8-8" stroke="#14233B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-        </svg>
-      </div>
-    </div>
-
-    <!-- services list — flowing two-column icons, not uniform cards -->
-    <div class="mt-24 sm:mt-32">
-      <p class="text-center font-accent text-sky-500 text-[12px] tracking-[0.25em] font-bold mb-3 reveal">SERVICE MENU</p>
-      <h3 class="text-center font-black text-navy-700 text-[24px] sm:text-[32px] leading-tight mb-14 reveal">サービス一覧</h3>
-
-      <div class="columns-1 sm:columns-2 gap-x-8 max-w-4xl mx-auto [column-fill:_balance]">
-        <div class="reveal break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-sky-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 9h8M8 13h5M21 12c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L4 21l1.1-3.3A7.9 7.9 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">AIコンシェルジュ構築</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">よくある質問を学習し、自然な会話で予約へ案内</p></div>
-        </div>
-        <div class="reveal reveal-delay-1 break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-salmon-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="2" width="14" height="20" rx="2.5"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">専用LP制作</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">お店の世界観を伝える、専用の受付ページを設計</p></div>
-        </div>
-        <div class="reveal reveal-delay-2 break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-coralpink-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">Instagram導線設計</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">プロフィール・投稿からLPへ、自然な動線を設計</p></div>
-        </div>
-        <div class="reveal break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-yellow-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11l18-7-7 18-2.5-7.5L3 11z"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">広告運用サポート</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">既存の広告と併用しながら、費用対効果を改善</p></div>
-        </div>
-        <div class="reveal reveal-delay-1 break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-mint-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h13a3 3 0 013 3v8a3 3 0 01-3 3H10l-5 4v-4H4a1 1 0 01-1-1V5a1 1 0 011-1z"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">LINE / Lステップ導線設計</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">来店後のリピートまで見据えた導線をつくる</p></div>
-        </div>
-        <div class="reveal reveal-delay-2 break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-sky-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V10M11 19V5M18 19v-7"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">アクセス分析・改善提案</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">データをもとに、次の一手を継続的にご提案</p></div>
-        </div>
-        <div class="reveal break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-salmon-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">AI検索時代の情報設計</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">AI検索で見つけてもらうための情報構造を整備</p></div>
-        </div>
-        <div class="reveal reveal-delay-1 break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-coralpink-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15l-1.9-4.1L5.5 9l4.6-1.4L12 3z"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">改善提案・伴走サポート</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">公開後も定期的に振り返り、一緒に育てていく</p></div>
-        </div>
-        <div class="reveal reveal-delay-2 break-inside-avoid mb-5 flex gap-4 items-start">
-          <span class="shrink-0 w-10 h-10 rounded-full bg-yellow-200 text-navy-700 flex items-center justify-center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.4"/></svg></span>
-          <div><h4 class="font-bold text-navy-700 text-[14.5px] mb-1">写真・動画の見せ方設計</h4><p class="text-[12.5px] text-navy-500 leading-relaxed">お店の魅力が伝わる、見せ方・構成をご提案</p></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- partner support: leader-line annotations on photo -->
-    <div class="grid lg:grid-cols-12 gap-10 items-center mt-24 sm:mt-32">
-      <div class="lg:col-span-12 relative reveal-scale">
-        <div class="-mx-5 sm:-mx-8 lg:mx-0">
-          <div class="kb-wrap relative aspect-[4/3] sm:aspect-[16/9] rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden shadow-lift">
-            <img class="kb-img w-full h-full object-cover object-[50%_42%]" src="assets/images/support-meeting.png" alt="タブレットを見ながら集客施策を話し合うサロンオーナーとサポートチーム" width="1448" height="1086" loading="lazy" decoding="async">
-          </div>
-          <!-- leader-line annotations, desktop only -->
-          <div class="hidden lg:block">
-            <span class="leader-dot" style="left:22%; top:28%"></span>
-            <div class="absolute bg-white rounded-xl px-3 py-1.5 shadow-card text-[12px] font-bold text-navy-700" style="left:6%; top:10%">デザイン</div>
-            <span class="leader-dot" style="left:38%; top:20%"></span>
-            <div class="absolute bg-yellow-200 rounded-xl px-3 py-1.5 shadow-card text-[12px] font-bold text-navy-700" style="left:32%; top:2%">SNS</div>
-            <span class="leader-dot" style="left:58%; top:55%"></span>
-            <div class="absolute bg-sky-200 rounded-xl px-3 py-1.5 shadow-card text-[12px] font-bold text-navy-700" style="left:63%; top:65%">AI</div>
-            <span class="leader-dot" style="left:70%; top:30%"></span>
-            <div class="absolute bg-mint-200 rounded-xl px-3 py-1.5 shadow-card text-[12px] font-bold text-navy-700" style="left:74%; top:10%">改善</div>
-            <span class="leader-dot" style="left:45%; top:70%"></span>
-            <div class="absolute bg-salmon-200 rounded-xl px-3 py-1.5 shadow-card text-[12px] font-bold text-navy-700" style="left:22%; top:80%">広告</div>
-            <span class="leader-dot" style="left:85%; top:60%"></span>
-            <div class="absolute bg-coralpink-200 rounded-xl px-3 py-1.5 shadow-card text-[12px] font-bold text-navy-700" style="left:86%; top:78%">LINE</div>
-          </div>
-        </div>
-      </div>
-      <div class="lg:col-span-12 mt-8 reveal-left">
-        <p class="font-accent text-yellow-500 text-[12px] tracking-[0.25em] font-bold mb-3">ONGOING PARTNERSHIP</p>
-        <h3 class="font-black text-navy-700 text-[24px] sm:text-[32px] leading-snug mb-4">作って終わりではありません。集客のパートナーとして、一緒に育てていきます。</h3>
-        <p class="text-[14px] sm:text-[15px] text-navy-500 leading-loose max-w-2xl">データをもとに改善を重ね、お客様との接点を増やしながら、予約・リピートの仕組みを一緒に強くしていきます。定期的なレポート提出、改善提案、AI・LPのアップデート、相談しやすいサポート体制で伴走します。</p>
-      </div>
-    </div>
-
-    <!-- team -->
-    <div class="mt-20 sm:mt-24">
-      <p class="text-center font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-3 reveal">OUR TEAM</p>
-      <h3 class="text-center font-black text-navy-700 text-[24px] sm:text-[32px] leading-tight mb-2 reveal">専門チームがサポート</h3>
-      <p class="text-center text-[13px] text-navy-500 mb-14 reveal">各分野のプロフェッショナルがチームで伴走します。</p>
-
-      <div class="flex flex-wrap justify-center items-end gap-x-8 gap-y-10 sm:gap-x-12 max-w-3xl mx-auto">
-        <div class="reveal text-center">
-          <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-salmon-300 flex items-center justify-center text-navy-800 font-black text-[19px] mb-3 shadow-lift">D</div>
-          <p class="text-[12.5px] font-bold text-navy-700">ディレクター</p>
-        </div>
-        <div class="reveal reveal-delay-1 text-center -translate-y-2">
-          <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-coralpink-300 flex items-center justify-center text-navy-800 font-black text-[16px] mb-3 shadow-soft">D</div>
-          <p class="text-[12px] font-semibold text-navy-600">デザイナー</p>
-        </div>
-        <div class="reveal reveal-delay-2 text-center translate-y-2">
-          <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-yellow-300 flex items-center justify-center text-navy-800 font-black text-[16px] mb-3 shadow-soft">M</div>
-          <p class="text-[12px] font-semibold text-navy-600">マーケター</p>
-        </div>
-        <div class="reveal reveal-delay-3 text-center">
-          <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-full bg-sky-300 flex items-center justify-center text-navy-800 font-black text-[17px] mb-3 shadow-lift">AI</div>
-          <p class="text-[12.5px] font-bold text-navy-700">AIエンジニア</p>
-        </div>
-        <div class="reveal text-center -translate-y-1">
-          <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-mint-300 flex items-center justify-center text-navy-800 font-black text-[16px] mb-3 shadow-soft">C</div>
-          <p class="text-[12px] font-semibold text-navy-600">コピーライター</p>
-        </div>
-        <div class="reveal reveal-delay-1 text-center translate-y-1">
-          <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-salmon-200 flex items-center justify-center text-navy-800 font-black text-[16px] mb-3 shadow-soft">S</div>
-          <p class="text-[12px] font-semibold text-navy-600">SNS運用担当</p>
-        </div>
-      </div>
-    </div>
+    <p class="mt-12 sm:mt-14 max-w-3xl text-[11.5px] sm:text-[12px] leading-relaxed text-navy-400 border-t border-navy-700/10 pt-6">AIコンシェルジュは、事前に設定した内容をもとに回答します。個別事情や未設定の情報には対応できない場合があります。必要に応じて人がご案内します。</p>
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- 料金目安 / 他社比較                                            -->
-<!-- ============================================================ -->
-<section id="pricing" class="relative bg-navy-900 text-white overflow-hidden py-24 sm:py-32 scroll-mt-20">
-  <div aria-hidden="true" class="blob absolute -top-28 -right-24 w-[360px] h-[360px] bg-salmon-400/15"></div>
-  <div aria-hidden="true" class="blob absolute -bottom-32 -left-24 w-[380px] h-[380px] bg-sky-300/10"></div>
-
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 relative">
-    <div class="text-center max-w-3xl mx-auto mb-14 reveal">
-      <p class="font-accent text-salmon-300 text-[12px] tracking-[0.25em] font-bold mb-3">PRICE &amp; DIFFERENCE</p>
-      <h2 class="font-black text-[28px] sm:text-[42px] leading-tight">必要なものを、<br class="sm:hidden">バラバラに発注しない。</h2>
-      <p class="mt-5 text-[14px] sm:text-[16px] leading-loose text-white/65">サロンの規模や現在の集客導線を確認し、必要な範囲だけをご提案します。ポータル掲載費・広告費とは別に、自社に残る受付導線を育てるための費用です。</p>
-    </div>
-
-    <div class="grid lg:grid-cols-5 gap-6 items-stretch">
-      <div class="lg:col-span-2 rounded-[2rem] bg-white text-navy-700 p-7 sm:p-9 shadow-lift reveal-left">
-        <p class="inline-flex rounded-full bg-salmon-100 px-3 py-1.5 text-[11px] font-black text-salmon-600">料金の目安</p>
-        <div class="mt-6 pb-6 border-b border-navy-700/10">
-          <p class="text-[12px] font-bold text-navy-400">初期設計・制作</p>
-          <p class="mt-1 font-accent font-black text-[38px] sm:text-[44px] tracking-tight">55万円<span class="text-[15px] font-bold">〜</span></p>
-          <p class="mt-2 text-[12.5px] text-navy-500">戦略設計／専用LP／AIコンシェルジュ初期構築</p>
-        </div>
-        <div class="py-6 border-b border-navy-700/10">
-          <p class="text-[12px] font-bold text-navy-400">運用・改善サポート</p>
-          <p class="mt-1 font-accent font-black text-[34px] tracking-tight">月額 5.5万円<span class="text-[15px] font-bold">〜</span></p>
-          <p class="mt-2 text-[12.5px] text-navy-500">会話ログ分析／改善提案／LP・AIの更新</p>
-        </div>
-        <p class="mt-5 text-[11px] leading-relaxed text-navy-400">※価格は税込の目安です。撮影・広告運用・Lステップ構築など、必要な施策により個別にお見積もりします。</p>
-      </div>
-
-      <div class="lg:col-span-3 rounded-[2rem] border border-white/15 bg-white/[.06] backdrop-blur p-6 sm:p-9 reveal-right">
-        <h3 class="font-black text-[22px] sm:text-[28px]">一般的な分業との違い</h3>
-        <div class="mt-7 overflow-x-auto -mx-1 px-1">
-          <table class="w-full min-w-[560px] text-left text-[12.5px] sm:text-[13px]">
-            <thead>
-              <tr class="border-b border-white/15 text-white/45">
-                <th class="py-3 pr-4 font-bold">比較項目</th>
-                <th class="py-3 px-4 font-bold">大手代理店</th>
-                <th class="py-3 px-4 font-bold">通常の制作会社</th>
-                <th class="py-3 pl-4 font-black text-salmon-300">Next Design</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-white/10">
-              <tr><th class="py-4 pr-4 font-bold">美容室の現場理解</th><td class="px-4 text-white/55">担当者による</td><td class="px-4 text-white/55">ヒアリング中心</td><td class="pl-4 font-bold text-white">元美容師が設計</td></tr>
-              <tr><th class="py-4 pr-4 font-bold">制作範囲</th><td class="px-4 text-white/55">広告中心</td><td class="px-4 text-white/55">サイト中心</td><td class="pl-4 font-bold text-white">LP・AI・広告を一体化</td></tr>
-              <tr><th class="py-4 pr-4 font-bold">公開後</th><td class="px-4 text-white/55">レポート中心</td><td class="px-4 text-white/55">保守中心</td><td class="pl-4 font-bold text-white">会話ログから改善</td></tr>
-              <tr><th class="py-4 pr-4 font-bold">残るもの</th><td class="px-4 text-white/55">掲載・配信中の流入</td><td class="px-4 text-white/55">Webサイト</td><td class="pl-4 font-bold text-salmon-300">自社の集客データと導線</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-10 rounded-[2rem] bg-cream-100 text-navy-700 p-7 sm:p-10 flex flex-col lg:flex-row lg:items-center justify-between gap-7 reveal">
-      <div>
-        <p class="font-black text-[20px] sm:text-[25px]">無料相談で、いきなり契約を勧めることはありません。</p>
-        <p class="mt-2 text-[13px] sm:text-[14px] leading-relaxed text-navy-500">現在の掲載費・予約経路・問い合わせ内容を整理し、「今やるべきか」「どこから始めるか」を30分で一緒に確認します。</p>
-      </div>
-      <a href="#cta-final" class="shrink-0 inline-flex items-center justify-center rounded-full bg-salmon-400 px-7 py-4 text-[14px] font-black text-white shadow-soft hover:bg-salmon-500 transition-colors">相談できる内容を見る</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- 導入の流れ / FAQ / 最終CTA                                    -->
-<!-- ============================================================ -->
-<section id="flow" class="relative bg-white pt-24 sm:pt-32 pb-24 sm:pb-32 overflow-hidden scroll-mt-20">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8">
-    <div class="text-center mb-16 reveal">
-      <p class="font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-3">PROCESS</p>
-      <h2 class="font-black text-navy-700 text-[28px] sm:text-[42px] leading-tight">導入までの流れ</h2>
-    </div>
-
-    <div class="reveal reveal-delay-1 overflow-x-auto pb-6 -mx-5 px-5 sm:mx-0 sm:px-0">
-      <div class="relative min-w-[820px] sm:min-w-0 pt-4 pb-6">
-        <svg id="process-path" viewBox="0 0 1200 90" preserveAspectRatio="none" class="absolute top-8 left-0 w-full h-14 text-salmon-300" aria-hidden="true">
-          <path class="draw-path" d="M20,20 C 140,90 260,-10 380,50 C 480,100 560,10 640,45 C 740,85 820,5 900,45 C 980,80 1060,10 1180,40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-        </svg>
-        <div class="relative grid grid-cols-7 gap-3">
-          <div class="flex flex-col items-center text-center">
-            <div class="w-14 h-14 rounded-full bg-navy-700 text-white flex items-center justify-center font-accent font-black text-[16px] mb-2 shadow-softer">01</div>
-            <svg viewBox="0 0 30 30" class="w-7 h-7 mb-1" aria-hidden="true"><circle cx="15" cy="10" r="5" fill="#F7A99C"/><path d="M6 27c1-7 5-10 9-10s8 3 9 10" fill="none" stroke="#26374A" stroke-width="1.6"/></svg>
-            <p class="text-[11.5px] font-bold text-navy-700 leading-snug">無料相談</p>
-          </div>
-          <div class="flex flex-col items-center text-center mt-8">
-            <div class="w-14 h-14 rounded-full bg-navy-700 text-white flex items-center justify-center font-accent font-black text-[16px] mb-2 shadow-softer">02</div>
-            <svg viewBox="0 0 30 30" class="w-7 h-7 mb-1" aria-hidden="true"><rect x="6" y="8" width="18" height="16" rx="2.5" fill="#FFE18F" stroke="#26374A" stroke-width="1.2"/><path d="M6 13h18" stroke="#26374A" stroke-width="1.2"/></svg>
-            <p class="text-[11.5px] font-bold text-navy-700 leading-snug">ヒアリング</p>
-          </div>
-          <div class="flex flex-col items-center text-center -mt-2">
-            <div class="w-14 h-14 rounded-full bg-navy-700 text-white flex items-center justify-center font-accent font-black text-[16px] mb-2 shadow-softer">03</div>
-            <svg viewBox="0 0 30 30" class="w-7 h-7 mb-1" aria-hidden="true"><rect x="7" y="6" width="16" height="20" rx="2" fill="#BCE5F5" stroke="#26374A" stroke-width="1.2"/><path d="M11 12h8M11 16h8" stroke="#26374A" stroke-width="1.2"/></svg>
-            <p class="text-[11.5px] font-bold text-navy-700 leading-snug">設計・提案</p>
-          </div>
-          <div class="flex flex-col items-center text-center mt-6">
-            <div class="w-14 h-14 rounded-full bg-navy-700 text-white flex items-center justify-center font-accent font-black text-[16px] mb-2 shadow-softer">04</div>
-            <svg viewBox="0 0 30 30" class="w-7 h-7 mb-1" aria-hidden="true"><path d="M6 24l6-6M6 24l3 1 -1-3z" fill="#26374A"/><path d="M11 19l9-9 3 3-9 9z" fill="#CFE8D6" stroke="#26374A" stroke-width="1"/></svg>
-            <p class="text-[11.5px] font-bold text-navy-700 leading-snug">制作・構築</p>
-          </div>
-          <div class="flex flex-col items-center text-center -mt-1">
-            <div class="w-14 h-14 rounded-full bg-navy-700 text-white flex items-center justify-center font-accent font-black text-[16px] mb-2 shadow-softer">05</div>
-            <svg viewBox="0 0 30 30" class="w-7 h-7 mb-1" aria-hidden="true"><path d="M15 4l2.6 5.6L23 12l-5.4 2.4L15 20l-2.6-5.6L7 12l5.4-2.4z" fill="#F4A7B5" stroke="#26374A" stroke-width="1"/></svg>
-            <p class="text-[11.5px] font-bold text-navy-700 leading-snug">AI学習・設定</p>
-          </div>
-          <div class="flex flex-col items-center text-center mt-7">
-            <div class="w-14 h-14 rounded-full bg-navy-700 text-white flex items-center justify-center font-accent font-black text-[16px] mb-2 shadow-softer">06</div>
-            <svg viewBox="0 0 30 30" class="w-7 h-7 mb-1" aria-hidden="true"><path d="M6 20l7-14 7 14z" fill="#FFE18F" stroke="#26374A" stroke-width="1.2"/><circle cx="13" cy="24" r="3" fill="#F47F72"/></svg>
-            <p class="text-[11.5px] font-bold text-navy-700 leading-snug">公開</p>
-          </div>
-          <div class="flex flex-col items-center text-center -mt-2">
-            <div class="w-16 h-16 rounded-full bg-salmon-400 text-white flex items-center justify-center font-accent font-black text-[16px] mb-2 shadow-lift">07</div>
-            <svg viewBox="0 0 30 30" class="w-7 h-7 mb-1" aria-hidden="true"><path d="M5 24 Q12 10 25 6" fill="none" stroke="#96CBA6" stroke-width="2.4" stroke-linecap="round"/><path d="M20 5l5 1-1 5z" fill="#96CBA6"/></svg>
-            <p class="text-[11.5px] font-bold text-navy-700 leading-snug">改善・運用</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FAQ — simple Q/A, salmon question + navy answer -->
-  <div id="faq" class="max-w-3xl mx-auto px-5 sm:px-8 mt-16 sm:mt-24 scroll-mt-20">
-    <div class="text-center mb-12 reveal">
-      <p class="font-accent text-salmon-500 text-[12px] tracking-[0.25em] font-bold mb-3">FAQ</p>
-      <h2 class="font-black text-navy-700 text-[28px] sm:text-[42px] leading-tight">よくあるご質問</h2>
-    </div>
-
-    <div class="space-y-8">
-      <div class="reveal border-b border-navy-700/10 pb-8">
-        <p class="text-[17px] sm:text-[20px] font-black text-salmon-500 mb-2">Q. ホットペッパーは続けたまま大丈夫ですか？</p>
-        <p class="text-[14px] sm:text-[15px] text-navy-700 leading-relaxed">はい、併用しながら少しずつ最適化していくのがおすすめです。まずは今の集客を活かしたまま、AIコンシェルジュと専用LPを追加する形で始められます。</p>
-      </div>
-      <div class="reveal reveal-delay-1 border-b border-navy-700/10 pb-8">
-        <p class="text-[17px] sm:text-[20px] font-black text-salmon-500 mb-2">Q. 今のホームページがあっても利用できますか？</p>
-        <p class="text-[14px] sm:text-[15px] text-navy-700 leading-relaxed">はい、現在のサイトを活かしながら併設していただけます。専用LPは、既存サイトでは伝えきれない部分を補う役割として設計します。</p>
-      </div>
-      <div class="reveal reveal-delay-2 border-b border-navy-700/10 pb-8">
-        <p class="text-[17px] sm:text-[20px] font-black text-salmon-500 mb-2">Q. AIは難しくないですか？操作に不安があります。</p>
-        <p class="text-[14px] sm:text-[15px] text-navy-700 leading-relaxed">専門知識は不要です。導入から日々の運用まで、私たちが伴走してサポートしますので、LINE感覚でご相談いただけます。</p>
-      </div>
-      <div class="reveal border-b border-navy-700/10 pb-8">
-        <p class="text-[17px] sm:text-[20px] font-black text-salmon-500 mb-2">Q. どれくらいの期間で公開できますか？</p>
-        <p class="text-[14px] sm:text-[15px] text-navy-700 leading-relaxed">お店の規模や内容により異なりますが、目安として無料相談から1〜2ヶ月程度でのご案内が多くなっています。詳細はヒアリング時にご提案します。</p>
-      </div>
-      <div class="reveal reveal-delay-1 border-b border-navy-700/10 pb-8">
-        <p class="text-[17px] sm:text-[20px] font-black text-salmon-500 mb-2">Q. 費用はどれくらいかかりますか？</p>
-        <p class="text-[14px] sm:text-[15px] text-navy-700 leading-relaxed">お店の規模やご要望によって変わります。ご予算に応じたご提案も可能ですので、まずはお気軽にご相談ください。</p>
-      </div>
-      <div class="reveal reveal-delay-2 pb-2">
-        <p class="text-[17px] sm:text-[20px] font-black text-salmon-500 mb-2">Q. 小規模サロンでも導入できますか？</p>
-        <p class="text-[14px] sm:text-[15px] text-navy-700 leading-relaxed">はい、5〜20名規模のサロン様を中心にご支援しています。お店の状況に合わせて、無理のない範囲からスタートできます。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== 最終CTA ==================== -->
-<section id="cta-final" class="relative overflow-hidden scroll-mt-20">
+<!-- ==================== CTA ==================== -->
+<section id="cta" class="relative overflow-hidden scroll-mt-20">
   <div class="kb-wrap relative min-h-[560px] sm:min-h-[620px] flex items-end sm:items-center">
-    <img class="kb-img absolute inset-0 w-full h-full object-cover object-[45%_42%]" src="assets/images/salon-interior.png" alt="自然光が入る明るく洗練された美容室の店内" width="1672" height="941" loading="lazy" decoding="async">
-    <div class="absolute inset-0 bg-gradient-to-t from-white/70 sm:bg-gradient-to-r sm:from-white/85 sm:via-white/35 sm:to-transparent"></div>
+    <img class="kb-img absolute inset-0 w-full h-full object-cover object-[45%_42%]" src="assets/images/salon-interior.png" alt="自然光が入る明るく洗練された店内" width="1672" height="941" loading="lazy" decoding="async">
+    <div class="absolute inset-0 bg-gradient-to-t from-white/80 sm:bg-gradient-to-r sm:from-white/90 sm:via-white/40 sm:to-transparent"></div>
 
     <div class="relative max-w-3xl w-full mx-auto sm:mx-0 sm:ml-[6vw] px-5 sm:px-0 py-16 sm:py-0 reveal">
-      <div class="bg-cream-100/95 backdrop-blur rounded-[2rem] p-7 sm:p-10 shadow-lift max-w-xl">
+      <div class="bg-white/95 backdrop-blur rounded-[2rem] p-7 sm:p-10 shadow-lift max-w-xl">
         <img src="assets/logo-mark-alpha.png" alt="" aria-hidden="true" class="h-7 w-auto mb-6 opacity-90">
-        <h2 class="font-black text-navy-700 text-[27px] sm:text-[38px] leading-snug">まずは30分、<br>今の集客を整理しませんか？</h2>
-        <p class="mt-4 text-[13.5px] sm:text-[15px] text-navy-500 leading-loose">売り込みではなく、現在の掲載費・予約経路・リピート課題を整理する無料相談です。</p>
-        <ul class="mt-4 grid sm:grid-cols-3 gap-2 text-[11.5px] font-bold text-navy-600">
-          <li class="rounded-xl bg-white/80 px-3 py-2.5">現状のボトルネック</li>
-          <li class="rounded-xl bg-white/80 px-3 py-2.5">導入の優先順位</li>
-          <li class="rounded-xl bg-white/80 px-3 py-2.5">費用と期間の目安</li>
-        </ul>
+        <h2 class="font-black text-navy-700 text-[26px] sm:text-[38px] leading-snug">まずは相談からでも<br>大丈夫です。</h2>
+        <p class="mt-4 text-[13.5px] sm:text-[15px] text-navy-500 leading-loose">Instagramの発信を、ちゃんと伝わる場所へ。ご状況に合わせて、必要な範囲から一緒に整えます。</p>
 
-        <form id="consultation-form" name="salon-consultation" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-7 space-y-3 scroll-mt-24">
-          <input type="hidden" name="form-name" value="salon-consultation">
+        <div class="mt-7 flex flex-col sm:flex-row gap-3">
+          <a href="#consultation-form" class="inline-flex items-center justify-center gap-2 rounded-full bg-pink-400 px-7 py-4 text-[14.5px] font-black text-white shadow-lift hover:bg-pink-500 transition-colors">
+            お申し込みはこちら
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#consultation-form" class="inline-flex items-center justify-center gap-2 rounded-full bg-navy-700/10 px-7 py-4 text-[14.5px] font-black text-navy-700 hover:bg-navy-700/20 transition-colors">
+            お問い合わせ
+          </a>
+        </div>
+
+        <form id="consultation-form" name="lp-consultation" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-8 space-y-3 scroll-mt-24 border-t border-navy-700/10 pt-7">
+          <input type="hidden" name="form-name" value="lp-consultation">
           <p class="hidden"><label>入力しないでください <input name="bot-field"></label></p>
-          <div class="grid sm:grid-cols-2 gap-3">
-            <label class="block">
-              <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">サロン名</span>
-              <input name="salon" autocomplete="organization" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300" placeholder="例）〇〇 hair">
-            </label>
-            <label class="block">
-              <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">お名前</span>
-              <input name="name" autocomplete="name" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300" placeholder="例）山田 太郎">
-            </label>
-          </div>
+          <label class="block">
+            <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">お名前</span>
+            <input name="name" autocomplete="name" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-pink-200" placeholder="例）山田 太郎">
+          </label>
           <label class="block">
             <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">ご連絡先メールアドレス</span>
-            <input type="email" name="email" autocomplete="email" inputmode="email" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300" placeholder="example@salon.jp">
+            <input type="email" name="email" autocomplete="email" inputmode="email" required class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-pink-200" placeholder="example@mail.com">
           </label>
           <label class="block">
-            <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">一番近いお悩み</span>
-            <select name="challenge" class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-salmon-300">
-              <option>ポータルサイトの固定費を見直したい</option>
-              <option>新規客のリピート率を上げたい</option>
-              <option>予約前の電話・問い合わせを減らしたい</option>
-              <option>自社集客・AI検索対策を始めたい</option>
-              <option>まずは話を聞いてみたい</option>
+            <span class="block mb-1.5 text-[11.5px] font-bold text-navy-600">ご相談内容</span>
+            <select name="topic" class="w-full rounded-xl border border-navy-700/15 bg-white px-4 py-3 text-[16px] text-navy-700 focus:outline-none focus:ring-2 focus:ring-pink-200">
+              <option>LP制作を申し込みたい</option>
+              <option>まずは内容を相談したい</option>
+              <option>料金・プランについて聞きたい</option>
+              <option>その他</option>
             </select>
           </label>
-          <button type="submit" class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-salmon-400 px-8 py-4 text-[15px] font-black text-white shadow-lift hover:bg-salmon-500 transition-colors">
-            無料相談を申し込む
+          <button type="submit" class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-pink-400 px-8 py-4 text-[15px] font-black text-white shadow-lift hover:bg-pink-500 transition-colors">
+            送信する
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </button>
-          <p class="text-center text-[10.5px] text-navy-400">入力内容を確認後、通常2営業日以内にご連絡します。</p>
+          <p class="text-center text-[10.5px] text-navy-400">送信後、内容を確認してメールでご案内します。</p>
         </form>
       </div>
     </div>
@@ -1333,29 +611,17 @@
 </main>
 
 <!-- ==================== FOOTER ==================== -->
-<footer class="bg-navy-900 text-white/70 pt-16 pb-8">
+<footer class="bg-navy-900 text-white/70 pt-14 pb-8">
   <div class="max-w-7xl mx-auto px-5 sm:px-8">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
-      <div class="lg:col-span-2">
-        <img src="assets/logo-mark-white.png" alt="Next Design" class="h-7 w-auto mb-4" width="200" height="57" loading="lazy">
-        <p class="text-[13px] leading-relaxed text-white/45 max-w-xs">集客の未来を、デザインする。<br>美容室の集客インフラを、AI時代仕様にアップデートするパートナーです。</p>
-      </div>
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-10 border-b border-white/10">
       <div>
-        <p class="text-[13px] font-semibold text-white/80 mb-4">サービス</p>
-        <ul class="space-y-2.5 text-[13px]">
-          <li><a href="#offer" class="hover:text-salmon-300 transition-colors">提供するもの</a></li>
-          <li><a href="#concierge-demo" class="hover:text-salmon-300 transition-colors">AIコンシェルジュ</a></li>
-          <li><a href="#numbers" class="hover:text-salmon-300 transition-colors">改善イメージ</a></li>
-          <li><a href="#flow" class="hover:text-salmon-300 transition-colors">導入の流れ</a></li>
-        </ul>
+        <img src="assets/logo-mark-white.png" alt="Next Design" class="h-7 w-auto mb-3" width="200" height="57" loading="lazy">
+        <p class="text-[13px] text-white/45">LP制作サービス</p>
       </div>
-      <div>
-        <p class="text-[13px] font-semibold text-white/80 mb-4">サポート</p>
-        <ul class="space-y-2.5 text-[13px]">
-          <li><a href="#faq" class="hover:text-salmon-300 transition-colors">よくあるご質問</a></li>
-          <li><a href="#cta-final" class="hover:text-salmon-300 transition-colors">無料相談</a></li>
-        </ul>
-      </div>
+      <a href="#consultation-form" class="inline-flex items-center justify-center gap-2 rounded-full bg-pink-400 px-6 py-3 text-[13.5px] font-black text-white hover:bg-pink-500 transition-colors w-fit">
+        お問い合わせはこちら
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
     </div>
     <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-white/35">
       <p>&copy; 2026 Next Design. All rights reserved.</p>
@@ -1366,8 +632,8 @@
 
 <div class="mobile-cta-bar sm:hidden fixed inset-x-0 bottom-0 z-40 bg-white/95 backdrop-blur border-t border-navy-700/10 px-4 pt-3">
   <div class="grid grid-cols-[.8fr_1.2fr] gap-2 max-w-md mx-auto">
-    <a href="#concierge-chat" class="inline-flex items-center justify-center rounded-full border border-navy-700/20 px-3 py-3 text-[12.5px] font-black text-navy-700">AIを体験</a>
-    <a href="#consultation-form" class="inline-flex items-center justify-center rounded-full bg-salmon-400 px-3 py-3 text-[12.5px] font-black text-white shadow-soft">30分の無料相談</a>
+    <a href="#concierge-chat" class="inline-flex items-center justify-center rounded-full border border-navy-700/20 px-3 py-3 text-[12.5px] font-black text-navy-700">AIに質問</a>
+    <a href="#consultation-form" class="inline-flex items-center justify-center rounded-full bg-pink-400 px-3 py-3 text-[12.5px] font-black text-white shadow-soft">お申し込みはこちら</a>
   </div>
 </div>
 
@@ -1408,7 +674,7 @@ document.addEventListener('DOMContentLoaded', function () {
   onScroll();
 
   /* ---- generic reveal on scroll ---- */
-  var revealSelectors = '.reveal, .reveal-left, .reveal-right, .reveal-scale, .kb-wrap';
+  var revealSelectors = '.reveal, .reveal-scale, .kb-wrap';
   var revealEls = document.querySelectorAll(revealSelectors);
   if (reduceMotion || !('IntersectionObserver' in window)) {
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
@@ -1423,53 +689,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     revealEls.forEach(function (el) { revealObserver.observe(el); });
   }
-
-  /* ---- illustrated graph draw-on-scroll (line paths, donut arcs, growing bars) ---- */
-  var graphSelectors = '.draw-path, .donut-arc, .grow-bar';
-  var graphEls = document.querySelectorAll(graphSelectors);
-  if (reduceMotion || !('IntersectionObserver' in window)) {
-    graphEls.forEach(function (el) { el.classList.add('is-visible'); });
-  } else {
-    var graphObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          graphObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.35 });
-    graphEls.forEach(function (el) { graphObserver.observe(el); });
-  }
-
-  /* ---- count-up numbers ---- */
-  var counters = document.querySelectorAll('.count-up');
-  function runCounter(el) {
-    var to = parseFloat(el.dataset.countTo || '0');
-    var decimals = parseInt(el.dataset.decimals || '0', 10);
-    var prefix = el.dataset.prefix || '';
-    var suffix = el.dataset.suffix || '';
-    if (reduceMotion) { el.textContent = prefix + to.toFixed(decimals) + suffix; return; }
-    var start = null;
-    var duration = 1400;
-    function step(ts) {
-      if (!start) start = ts;
-      var progress = Math.min((ts - start) / duration, 1);
-      var eased = 1 - Math.pow(1 - progress, 3);
-      var val = to * eased;
-      el.textContent = prefix + val.toFixed(decimals) + suffix;
-      if (progress < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-  var counterObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        runCounter(entry.target);
-        counterObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.4 });
-  counters.forEach(function (el) { counterObserver.observe(el); });
 
 });
 </script>
@@ -1487,49 +706,29 @@ document.addEventListener('DOMContentLoaded', function () {
   var modal = document.getElementById('booking-modal');
   var modalBackdrop = document.getElementById('booking-modal-backdrop');
   var modalClose = document.getElementById('booking-modal-close');
-  var sectionEl = document.getElementById('concierge-demo');
+  var sectionEl = document.getElementById('concierge');
 
   if (!logEl || !formEl || !inputEl || !sectionEl) return;
 
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var heroVideo = document.getElementById('concierge-hero-video');
-  if (heroVideo) {
-    if (reduceMotion) {
-      heroVideo.removeAttribute('autoplay');
-      heroVideo.removeAttribute('loop');
-      heroVideo.pause();
-    } else {
-      // Some browsers ignore the autoplay attribute after dynamic DOM changes; play() is a no-op if already playing.
-      var playPromise = heroVideo.play();
-      if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(function () {});
-    }
-  }
-
-  /* Demo salon data — mirrors assets/data/demo-salon.json and the Netlify function. */
-  var DEMO_SALON = {
-    name: 'LUMINA HAIR 福岡',
-    hours: '10:00〜20:00',
-    closedDay: '火曜日',
-    menu: [
-      { name: 'カット', price: '5,500円', duration: '約60分' },
-      { name: 'カット＋カラー', price: '12,100円', duration: '約120分' },
-      { name: '髪質改善トリートメント', price: '9,900円', duration: '約90分' },
-      { name: '縮毛矯正', price: '16,500円〜', duration: '約180分' },
-      { name: 'ブリーチなしカラー', price: '9,900円〜', duration: '約120分' },
-      { name: 'メンズカット', price: '4,950円', duration: '約45分' }
-    ],
-    availability: ['本日 14:00', '本日 16:30', '明日 11:00', '明日 15:00']
+  /* Demo service data — mirrors the Netlify function. */
+  var DEMO_SERVICE = {
+    name: 'LP制作',
+    price: '78,000円（税込・1ページ構成）',
+    includes: ['構成設計', '文章整理', 'オリジナルデザイン', 'スマートフォン対応', '公開サポート'],
+    supportPeriod: '納品後3ヶ月間、修正・相談は何度でも無償',
+    deliveryEstimate: 'ヒアリング後、目安2〜3週間（内容により前後します）'
   };
 
   var INITIAL_SUGGESTIONS = [
-    '今日、空いている時間はありますか？',
-    'ブリーチなしでも明るくできますか？',
-    '縮毛矯正は何時間かかりますか？',
-    '初めてですが、担当者を指名できますか？'
+    '自分にはどのプランが合いますか？',
+    'この内容でも依頼できますか？',
+    '納期はどのくらいですか？',
+    '料金の内訳を教えてください'
   ];
-  var ESCALATION_REPLY = 'こちらはスタッフへの確認が必要です。実際の店舗では、担当者へ引き継ぐことができます。';
-  var GREETING = 'こんにちは。\nLUMINA HAIRのAIコンシェルジュです。\n\nメニューや髪のお悩み、空き時間など、予約前に気になることをお気軽にご相談ください。';
+  var ESCALATION_REPLY = 'こちらは個別に確認が必要な内容です。担当者へ引き継ぎますので、下のフォームからご相談ください。';
+  var GREETING = 'こんにちは。\nNext DesignのAIコンシェルジュです。\n\n料金やプラン、制作の流れなど、お申し込み前に気になることをお気軽にご相談ください。';
   var MAX_INPUT_LENGTH = 300;
   var MAX_HISTORY_SENT = 10;
 
@@ -1554,7 +753,7 @@ document.addEventListener('DOMContentLoaded', function () {
     wrap.className = 'flex ' + (role === 'user' ? 'justify-end' : 'justify-start');
     var bubble = document.createElement('div');
     bubble.className = (role === 'user'
-      ? 'bg-salmon-400 text-white rounded-2xl rounded-br-sm'
+      ? 'bg-pink-400 text-white rounded-2xl rounded-br-sm'
       : 'bg-white text-navy-700 rounded-2xl rounded-bl-sm shadow-sm border border-navy-700/5') +
       ' px-4 py-2.5 max-w-[86%]';
     bubble.style.whiteSpace = 'pre-line';
@@ -1603,13 +802,13 @@ document.addEventListener('DOMContentLoaded', function () {
     card.className = 'bg-mint-100 border border-mint-300 rounded-2xl p-4 max-w-[86%]';
     var p = document.createElement('p');
     p.className = 'text-[12.5px] font-bold text-navy-700 mb-3';
-    p.textContent = 'ご希望のお時間はございましたか？';
+    p.textContent = 'このままお申し込みに進みますか？';
     var row = document.createElement('div');
     row.className = 'flex flex-wrap gap-2';
     var bookBtn = document.createElement('button');
     bookBtn.type = 'button';
-    bookBtn.className = 'px-4 py-2 rounded-full bg-navy-700 text-white text-[12.5px] font-bold hover:bg-salmon-500 transition-colors';
-    bookBtn.textContent = 'このまま予約する';
+    bookBtn.className = 'px-4 py-2 rounded-full bg-navy-700 text-white text-[12.5px] font-bold hover:bg-pink-500 transition-colors';
+    bookBtn.textContent = 'このまま申し込む';
     bookBtn.addEventListener('click', openBookingModal);
     var moreBtn = document.createElement('button');
     moreBtn.type = 'button';
@@ -1633,7 +832,7 @@ document.addEventListener('DOMContentLoaded', function () {
     (list || []).slice(0, 4).forEach(function (text, i) {
       var btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'text-left text-[12px] sm:text-[12.5px] font-medium text-navy-600 bg-white border border-navy-700/10 rounded-2xl px-3.5 py-2 shadow-sm hover:border-salmon-300 hover:text-salmon-600 transition-colors';
+      btn.className = 'text-left text-[12px] sm:text-[12.5px] font-medium text-navy-600 bg-white border border-navy-700/10 rounded-2xl px-3.5 py-2 shadow-sm hover:border-pink-300 hover:text-pink-600 transition-colors';
       btn.textContent = text;
       if (!reduceMotion) {
         btn.style.opacity = '0';
@@ -1679,40 +878,30 @@ document.addEventListener('DOMContentLoaded', function () {
       for (var i = 0; i < arguments.length; i++) { if (t.indexOf(arguments[i]) > -1) return true; }
       return false;
     }
-    var menuLines = DEMO_SALON.menu.map(function (m) { return m.name + '：' + m.price + '（' + m.duration + '）'; }).join('\n');
+    var includesLines = DEMO_SERVICE.includes.map(function (item) { return '・' + item; }).join('\n');
 
-    // Specific-topic and availability checks run before the generic 料金/時間
-    // catch-alls, because phrases like "縮毛矯正は何時間かかりますか？" or
-    // "今日、空いている時間はありますか？" contain the generic word 時間 too.
-    if (has('空き', '空い', '予約', 'いつ', '本日', '今日', '明日')) {
-      return { reply: '現在ご案内できる目安のお時間です（デモ表示）。\n' + DEMO_SALON.availability.join(' / '), showBooking: true, suggestions: ['担当者を指名できますか？', 'キャンセルはできますか？'] };
+    // Specific-topic checks run before the generic 料金/プラン catch-alls, so
+    // e.g. "納期はどのくらいですか？" doesn't get caught by a broader rule first.
+    if (has('納期', 'どのくらい', 'どれくらい', '期間', '何日', '何週間')) {
+      return { reply: '制作期間の目安は、' + DEMO_SERVICE.deliveryEstimate + 'です。', showBooking: false, suggestions: ['料金の内訳を教えてください', 'この内容でも依頼できますか？'] };
     }
-    if (has('指名', '担当', 'スタイリスト')) {
-      return { reply: 'はい、ご指名可能です。ご希望のスタイリストがいらっしゃれば、予約時にお申し付けください。', showBooking: true, suggestions: ['今日、空いている時間はありますか？'] };
+    if (has('プラン', 'どのプラン', '合います', '合う')) {
+      return { reply: '現在はLP制作（' + DEMO_SERVICE.price + '）の1プランでご案内しています。Instagramなどで発信中の個人サロンや、自己紹介的なページをお考えの方に選ばれています。', showBooking: false, suggestions: ['この内容でも依頼できますか？', '納期はどのくらいですか？'] };
     }
-    if (has('初めて', '初回', 'はじめて')) {
-      return { reply: '初めてのご来店でも安心です。当日はカウンセリングでお悩みやご希望を丁寧にお伺いします。', showBooking: false, suggestions: ['髪質改善について教えてください', '今日の空き時間はありますか？'] };
+    if (has('依頼できます', '対応できます', 'この内容', 'お願いできます')) {
+      return { reply: '業種を問わずご相談いただけます。まずは現在の発信状況やご希望を伺ったうえで、内容に合わせてご提案します。', showBooking: true, suggestions: ['料金の内訳を教えてください', '修正や相談はできますか？'] };
     }
-    if (has('ブリーチ')) {
-      return { reply: 'ブリーチなしでも、明るめのカラーに近づけるメニューをご用意しています（ブリーチなしカラー　9,900円〜／約120分）。', showBooking: true, suggestions: ['縮毛矯正は何時間かかりますか？'] };
+    if (has('修正', '変更', 'サポート', 'フォロー')) {
+      return { reply: DEMO_SERVICE.supportPeriod + '対応します。公開後に気になる点が出てきても、遠慮なくご相談ください。', showBooking: false, suggestions: ['納期はどのくらいですか？', '料金の内訳を教えてください'] };
     }
-    if (has('縮毛矯正', 'くせ毛', 'クセ毛')) {
-      return { reply: '縮毛矯正は16,500円〜、施術時間の目安は約180分です。髪の状態によって前後する場合があります。', showBooking: true, suggestions: ['髪質改善トリートメントについて'] };
+    if (has('料金', 'いくら', '価格', '値段', '内訳')) {
+      return { reply: DEMO_SERVICE.name + 'は' + DEMO_SERVICE.price + 'です。含まれる内容です。\n' + includesLines, showBooking: false, suggestions: ['納期はどのくらいですか？', 'この内容でも依頼できますか？'] };
     }
-    if (has('髪質')) {
-      return { reply: '髪質改善トリートメントは9,900円、約90分です。うねりや広がりが気になる方に人気のメニューです。', showBooking: false, suggestions: ['料金一覧を見る'] };
+    if (has('コンシェルジュ', 'AI機能', 'チャット')) {
+      return { reply: 'AIコンシェルジュのLPへの搭載についても、ご希望があればご相談内容として承ります。', showBooking: false, suggestions: ['料金の内訳を教えてください'] };
     }
-    if (has('メンズ', '男性')) {
-      return { reply: 'メンズカットは4,950円、約45分でご案内しています。', showBooking: true, suggestions: ['今日の空き時間はありますか？'] };
-    }
-    if (has('営業時間', '何時から', '定休')) {
-      return { reply: '営業時間は' + DEMO_SALON.hours + '、定休日は' + DEMO_SALON.closedDay + 'です。', showBooking: false, suggestions: ['今日の空き時間はありますか？'] };
-    }
-    if (has('料金', 'いくら', '価格', '値段')) {
-      return { reply: 'メニューの目安料金です。\n' + menuLines, showBooking: false, suggestions: ['所要時間も教えてください', '今日の空き時間はありますか？'] };
-    }
-    if (has('時間', '所要', '何分', 'どれくらい')) {
-      return { reply: '施術時間の目安です。\n' + menuLines, showBooking: false, suggestions: ['料金も教えてください', '空いている時間はありますか？'] };
+    if (has('申し込み', '申込', '依頼したい', 'お願いしたい', '進めたい')) {
+      return { reply: 'ありがとうございます。下のフォームからお申し込みいただけます。内容を確認のうえ、メールでご案内します。', showBooking: true, suggestions: ['納期はどのくらいですか？'] };
     }
     return { reply: ESCALATION_REPLY, showBooking: false, suggestions: INITIAL_SUGGESTIONS };
   }
@@ -1866,114 +1055,25 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 <script defer>
-/* ==================== Opening brand animation — draw-on timeline ==================== */
+/* Opening: a quiet logo fade. Shown once per session. */
 document.addEventListener('DOMContentLoaded', function () {
   var overlay = document.getElementById('opening-overlay');
-  if (!overlay || overlay.hasAttribute('hidden')) return; // already skipped by the inline early-exit script
-
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!overlay || overlay.hasAttribute('hidden')) return;
   var skipBtn = document.getElementById('opening-skip');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var closed = false;
-  var timers = [];
-
-  // QA-only: ?slow=4 plays the whole timeline 4x slower for visual review. Has no effect
-  // unless explicitly passed in the URL, so production timing is untouched by default.
-  var qaSpeed = parseFloat((window.location.search.match(/[?&]slow=([\d.]+)/) || [])[1]) || 1;
-
-  function after(ms, fn) { var id = window.setTimeout(fn, ms * qaSpeed); timers.push(id); return id; }
-  function clearTimers() { timers.forEach(function (id) { window.clearTimeout(id); }); timers = []; }
-
-  function markSeen() {
-    try { sessionStorage.setItem('nextDesignOpeningSeen', 'true'); } catch (e) { /* ignore */ }
-  }
-
-  function unlockScroll() {
-    document.documentElement.classList.remove('opening-lock-scroll');
-  }
-
-  function moveFocusToHero() {
-    var hero = document.getElementById('hero');
-    if (!hero) return;
-    if (!hero.hasAttribute('tabindex')) hero.setAttribute('tabindex', '-1');
-    hero.focus({ preventScroll: true });
-  }
-
-  function closeOpening(immediate) {
+  function closeOpening() {
     if (closed) return;
     closed = true;
-    markSeen();
-    clearTimers();
-    unlockScroll();
-    if (immediate || reduceMotion) {
-      overlay.setAttribute('hidden', '');
-      moveFocusToHero();
-      return;
-    }
+    try { sessionStorage.setItem('nextDesignOpeningSeen', 'true'); } catch (e) {}
+    document.documentElement.classList.remove('opening-lock-scroll');
     overlay.classList.add('is-hidden');
-    after(650, function () {
-      overlay.setAttribute('hidden', '');
-      moveFocusToHero();
-    });
+    window.setTimeout(function () { overlay.setAttribute('hidden', ''); }, reduceMotion ? 10 : 550);
   }
-
-  if (skipBtn) {
-    skipBtn.addEventListener('click', function () { closeOpening(false); });
-    after(reduceMotion ? 0 : 300, function () { skipBtn.focus(); });
-  }
-
-  document.addEventListener('keydown', function onKey(e) {
-    if (closed) { document.removeEventListener('keydown', onKey); return; }
-    if (e.key === 'Escape') closeOpening(false);
-  });
-
-  // Safety net: never let the opening hold the page for more than ~4.5s even if something stalls.
-  after(4500, function () { closeOpening(true); });
-
-  if (reduceMotion) {
-    var allStrokes = overlay.querySelectorAll('.opening-stroke');
-    allStrokes.forEach(function (p) { p.style.strokeDasharray = 'none'; p.style.strokeDashoffset = '0'; });
-    overlay.classList.add('is-drawn', 'tagline-visible');
-    after(900, function () { closeOpening(false); });
-    return;
-  }
-
-  var groups = {
-    next: Array.prototype.slice.call(overlay.querySelectorAll('.opening-group-next')),
-    design: Array.prototype.slice.call(overlay.querySelectorAll('.opening-group-design')),
-    tail: Array.prototype.slice.call(overlay.querySelectorAll('.opening-group-tail')),
-    underline: Array.prototype.slice.call(overlay.querySelectorAll('.opening-group-underline'))
-  };
-
-  function prepPath(p) {
-    var len = p.getTotalLength();
-    p.style.transition = 'none';
-    p.style.strokeDasharray = String(len);
-    p.style.strokeDashoffset = String(len);
-  }
-  Object.keys(groups).forEach(function (key) { groups[key].forEach(prepPath); });
-
-  // Force layout so the browser paints the starting dash-offset before the transition begins.
-  void overlay.offsetWidth;
-
-  function drawGroup(list, durationMs, staggerMs) {
-    list.forEach(function (p, i) {
-      var delay = i * staggerMs * qaSpeed;
-      p.style.transition = 'stroke-dashoffset ' + (durationMs * qaSpeed) + 'ms cubic-bezier(.35,.1,.25,1) ' + delay + 'ms';
-      requestAnimationFrame(function () { p.style.strokeDashoffset = '0'; });
-    });
-  }
-
-  // Timeline: write "Next", then "Design", then sweep the underline + arrow flourish,
-  // settle into the solid filled logo, fade in the tagline, hold briefly, then fade out.
-  drawGroup(groups.next, 650, 70);
-  after(520, function () { drawGroup(groups.design, 750, 55); });
-  after(1500, function () { drawGroup(groups.tail, 320, 0); });
-  after(1600, function () { drawGroup(groups.underline, 500, 0); });
-
-  after(2150, function () { overlay.classList.add('is-drawn'); });
-  after(2200, function () { overlay.classList.add('tagline-visible'); });
-
-  after(2800, function () { closeOpening(false); });
+  if (skipBtn) skipBtn.addEventListener('click', closeOpening);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeOpening(); });
+  requestAnimationFrame(function () { overlay.classList.add('logo-visible'); });
+  window.setTimeout(closeOpening, reduceMotion ? 150 : 2600);
 });
 </script>
 
