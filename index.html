@@ -27,7 +27,7 @@
       extend: {
         colors: {
           navy: { 50:'#EEF1F4',100:'#DCE2E8',200:'#B9C3CE',300:'#8996A8',400:'#5B6C81',500:'#3F5268',600:'#2F425A', 700:'#26374A', 800:'#1B2A3B', 900:'#14233B' },
-          cream: { DEFAULT:'#FFF1D6', 50:'#FFFDFC', 100:'#FFF8F2', 200:'#FFF1D6' },
+          cream: { DEFAULT:'#FFFFFF', 50:'#FFFFFF', 100:'#FFFFFF', 200:'#FFFFFF' },
           salmon: { 100:'#F7DEE6', 200:'#EFBBCE', 300:'#D6789B', 400:'#AD2F5B', 500:'#9D244F', 600:'#7D1D3F' },
           pink: { 50:'#FDF2F8', 100:'#FCE4F1', 200:'#F9BEE0', 300:'#F472B6', 400:'#F0299A', 500:'#D81C82', 600:'#B01669' },
           coralpink: { 100:'#FDE4D6', 200:'#FBC9AD', 300:'#F79868', 400:'#F26829', 500:'#D95A1F' },
@@ -111,7 +111,7 @@
 
   /* ---- Opening brand animation ---- */
   html.opening-lock-scroll, html.opening-lock-scroll body{ overflow:hidden; height:100%; }
-  .opening-overlay{ position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; background:#FFF8F2; transition:opacity .55s ease; }
+  .opening-overlay{ position:fixed; inset:0; z-index:9999; display:flex; align-items:center; justify-content:center; background:#FFFFFF; transition:opacity .55s ease; }
   .opening-overlay[hidden]{ display:none; }
   .opening-overlay.is-hidden{ opacity:0; pointer-events:none; }
   .opening-skip{ position:absolute; top:20px; right:20px; font:700 12px 'Noto Sans JP',sans-serif; color:#5B6C81; background:transparent; border:1px solid rgba(38,55,74,.2); border-radius:999px; padding:8px 18px; cursor:pointer; }
@@ -141,7 +141,7 @@
   .hero-lp__img{ width: 100%; height: 100%; object-fit: cover; object-position: 48% 38%; }
   .hero-lp__overlay{
     position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(255,250,240,.18) 0%, rgba(255,247,236,.64) 24%, rgba(255,245,233,.70) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,.64) 24%, rgba(255,255,255,.70) 100%);
   }
   .hero-lp__panel{ max-width: 30rem; }
   .hero-lp__headline{
@@ -201,7 +201,7 @@
     }
     .hero-lp__img{ object-position: 50% 46%; }
     .hero-lp__overlay{
-      background: linear-gradient(100deg, rgba(255,248,238,.80) 0%, rgba(255,246,235,.64) 32%, rgba(255,246,235,0) 58%);
+      background: linear-gradient(100deg, rgba(255,255,255,.80) 0%, rgba(255,255,255,.64) 32%, rgba(255,255,255,0) 58%);
     }
     .hero-lp__panel{ max-width: 40rem; }
   }
@@ -218,7 +218,7 @@
 </style>
 </head>
 
-<body class="bg-cream-50 text-navy-700 font-sans antialiased">
+<body class="bg-white text-navy-700 font-sans antialiased">
 
 <!-- ==================== OPENING BRAND ANIMATION ==================== -->
 <div id="opening-overlay" class="opening-overlay" role="dialog" aria-modal="true" aria-label="Next Design オープニング">
@@ -266,7 +266,7 @@
 
 <!-- ==================== HEADER ==================== -->
 <header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-shadow duration-300">
-  <div class="absolute inset-0 bg-[rgba(255,253,252,0.92)] backdrop-blur-md border-b border-navy-700/8"></div>
+  <div class="absolute inset-0 bg-white/95 backdrop-blur-md border-b border-navy-700/8"></div>
   <div class="relative max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
     <a href="#hero" class="shrink-0 flex items-center" aria-label="Next Design トップへ">
       <img src="assets/logo-mark-alpha.png" alt="Next Design" class="h-7 sm:h-8 w-auto" width="220" height="63" loading="eager">
@@ -276,7 +276,7 @@
       <a href="#approach" class="hover:text-pink-500 transition-colors">サービス内容</a>
       <a href="#works" class="hover:text-pink-500 transition-colors">制作イメージ</a>
       <a href="#concierge" class="hover:text-pink-500 transition-colors">AIコンシェルジュ</a>
-      <a href="#approach" class="hover:text-pink-500 transition-colors">納品後サポート</a>
+      <a href="#ongoing-support" class="hover:text-pink-500 transition-colors">納品後サポート</a>
     </nav>
 
     <div class="hidden lg:flex items-center gap-3">
@@ -290,12 +290,12 @@
     </button>
   </div>
 
-  <div id="mobile-menu" class="hidden lg:hidden relative bg-cream-100 border-b border-navy-700/10 shadow-soft">
+  <div id="mobile-menu" class="hidden lg:hidden relative bg-white border-b border-navy-700/10 shadow-soft">
     <nav class="flex flex-col px-6 py-5 gap-1 text-navy-700 font-medium" aria-label="モバイルナビゲーション">
       <a href="#approach" class="py-3 border-b border-navy-700/5">サービス内容</a>
       <a href="#works" class="py-3 border-b border-navy-700/5">制作イメージ</a>
       <a href="#concierge" class="py-3 border-b border-navy-700/5">AIコンシェルジュ</a>
-      <a href="#approach" class="py-3 border-b border-navy-700/5">納品後サポート</a>
+      <a href="#ongoing-support" class="py-3 border-b border-navy-700/5">納品後サポート</a>
       <div class="flex flex-col gap-3 mt-4">
         <a href="#concierge-chat" class="text-center px-5 py-3 rounded-full border border-navy-700/20 font-semibold">AIに質問する</a>
         <a href="#consultation-form" class="text-center px-5 py-3 rounded-full bg-pink-400 text-white font-semibold">お申し込みはこちら</a>
@@ -389,7 +389,7 @@
 <!-- ============================================================ -->
 <!-- Next Designの考え方・強み / 提供内容                          -->
 <!-- ============================================================ -->
-<section id="approach" class="relative bg-cream-100 py-20 sm:py-28 scroll-mt-20">
+<section id="approach" class="relative bg-white py-20 sm:py-28 scroll-mt-20">
   <div class="max-w-5xl mx-auto px-5 sm:px-8">
     <div class="max-w-2xl reveal">
       <span class="approach-badge inline-flex items-center rounded-full bg-white border border-navy-700/15 px-4 py-2 text-[12px] font-black text-navy-700 shadow-softer -rotate-2">だから安心</span>
@@ -454,7 +454,7 @@
 <!-- ============================================================ -->
 <!-- AIコンシェルジュ紹介                                          -->
 <!-- ============================================================ -->
-<section id="concierge" class="relative bg-cream-100 overflow-hidden pt-20 sm:pt-28 pb-16 sm:pb-20 scroll-mt-20">
+<section id="concierge" class="relative bg-white overflow-hidden pt-20 sm:pt-28 pb-16 sm:pb-20 scroll-mt-20">
   <div class="max-w-7xl mx-auto px-5 sm:px-8">
     <div class="max-w-2xl reveal">
       <p class="text-[13px] font-bold text-pink-500 tracking-[0.1em]">AI CONCIERGE</p>
@@ -555,6 +555,103 @@
   </div>
 </section>
 
+<!-- ============================================================ -->
+<!-- 公開後の継続サポート                                        -->
+<!-- ============================================================ -->
+<section id="ongoing-support" class="relative bg-white overflow-hidden py-20 sm:py-28 scroll-mt-20">
+  <div aria-hidden="true" class="blob absolute -top-28 -right-24 w-[340px] h-[340px] bg-salmon-100/70"></div>
+  <div aria-hidden="true" class="absolute top-20 left-[6%] w-3 h-3 rounded-full bg-yellow-300"></div>
+  <div aria-hidden="true" class="absolute bottom-28 right-[8%] w-5 h-5 rounded-full border-2 border-salmon-300/60"></div>
+
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 relative">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+      <div class="reveal">
+        <p class="font-accent text-pink-500 text-[12px] tracking-[0.22em] font-bold mb-4">AFTER LAUNCH SUPPORT</p>
+        <h2 class="font-serif font-bold text-navy-700 text-[30px] sm:text-[42px] leading-[1.5] tracking-[0.01em]">
+          作って終わりではなく、<br>その先も、<br>一緒に育てます。
+        </h2>
+
+        <div class="mt-7 space-y-5 text-[14px] sm:text-[15px] leading-[2] text-navy-500">
+          <p class="font-bold text-navy-700">LPは、公開して完成ではありません。</p>
+          <p>
+            サービス内容が変わったとき。<br>
+            新しい商品が生まれたとき。<br>
+            発信を続けるなかで、<br class="sm:hidden">伝えたいことが変わったとき。
+          </p>
+          <p>その時々の変化に合わせて、文章や写真、導線を整えていくことで、LPは少しずつ育っていきます。</p>
+          <p>ご希望の方には、公開後も気軽に相談できる運用サポートをご用意しています。</p>
+        </div>
+
+        <div class="mt-9 rounded-[1.5rem] bg-white/75 border border-white px-5 py-5 shadow-softer text-[12px] sm:text-[13px] leading-[1.9] text-navy-500">
+          <p class="font-bold text-navy-700">無償フォローと月額サポートについて</p>
+          <p class="mt-1.5">納品後3か月間の修正・ご相談は、これまでどおり無償です。その後も継続して相談・更新をご希望の方に、月額の運用サポートをご用意しています。</p>
+        </div>
+
+        <div class="mt-12 sm:mt-14 pt-9 border-t border-navy-700/10 reveal" style="transition-delay:.08s">
+          <h3 class="font-serif font-bold text-navy-700 text-[21px] sm:text-[25px]">以下のような方へ</h3>
+          <ul class="mt-6 space-y-4 text-[14px] sm:text-[15px] font-bold text-navy-600">
+            <li class="flex items-start gap-3"><span class="mt-[0.65em] w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" aria-hidden="true"></span><span>作ったあとも定期的に内容を更新したい</span></li>
+            <li class="flex items-start gap-3"><span class="mt-[0.65em] w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" aria-hidden="true"></span><span>新しいサービスや企画をすぐに反映したい</span></li>
+            <li class="flex items-start gap-3"><span class="mt-[0.65em] w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" aria-hidden="true"></span><span>Web担当者を雇うほどではない</span></li>
+            <li class="flex items-start gap-3"><span class="mt-[0.65em] w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" aria-hidden="true"></span><span>自分でHTMLを触るのは不安</span></li>
+            <li class="flex items-start gap-3"><span class="mt-[0.65em] w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" aria-hidden="true"></span><span>発信や集客について相談できる相手がほしい</span></li>
+            <li class="flex items-start gap-3"><span class="mt-[0.65em] w-1.5 h-1.5 rounded-full bg-pink-400 shrink-0" aria-hidden="true"></span><span>AIコンシェルジュの内容を育てていきたい</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="relative reveal" style="transition-delay:.12s">
+        <div aria-hidden="true" class="absolute -top-4 -right-2 sm:-right-4 w-20 h-20 rounded-full bg-yellow-300/80"></div>
+        <div class="relative bg-white rounded-[2rem] p-7 sm:p-10 shadow-lift border border-white">
+          <div class="text-center pb-8 border-b border-navy-700/10">
+            <p class="inline-flex rounded-full bg-salmon-100 px-4 py-2 text-[11px] font-black tracking-wide text-salmon-600">継続運用サポート</p>
+            <p class="mt-6 flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1 font-accent font-black text-navy-700 leading-none">
+              <span class="text-[15px] sm:text-[17px] tracking-normal">月額</span>
+              <span class="text-[36px] sm:text-[45px] tracking-tight">30,000円</span>
+              <span class="text-[13px] sm:text-[15px] tracking-normal">（税込）</span>
+            </p>
+            <div class="mt-5 space-y-1 text-[11px] sm:text-[12px] leading-relaxed text-navy-400">
+              <p>※ご希望の方のみ</p>
+              <p>※いつでもご相談のうえ終了可能</p>
+            </div>
+          </div>
+
+          <ul class="mt-8 space-y-5 text-[13.5px] sm:text-[14.5px] font-bold text-navy-700">
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>LP内の文章や写真の差し替え</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>商品、サービス、料金などの情報更新</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>お知らせやキャンペーン情報の追加</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>申し込みフォームやLINEなどの導線調整</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>スマートフォン表示の確認と軽微な修正</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>AIコンシェルジュの回答内容の調整</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>Webや発信についてのチャット相談</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>月1回のオンラインミーティング</span></li>
+            <li class="flex items-start gap-3"><span class="mt-0.5 w-6 h-6 rounded-full bg-salmon-100 text-salmon-500 shrink-0 inline-flex items-center justify-center" aria-hidden="true">✓</span><span>アクセスや反応をもとにした改善提案</span></li>
+          </ul>
+
+          <p class="mt-8 pt-6 border-t border-navy-700/10 text-[10.5px] sm:text-[11.5px] leading-[1.8] text-navy-400">※大規模なページ追加、全面リニューアル、撮影、広告運用などは、内容を確認のうえ別途お見積もりいたします。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-20 sm:mt-28 max-w-4xl mx-auto text-center reveal-scale">
+      <div class="w-12 h-px bg-salmon-400 mx-auto mb-8"></div>
+      <p class="font-serif font-bold text-navy-700 text-[21px] sm:text-[30px] leading-[1.9] tracking-[0.02em]">
+        作ったものを、置いていかない。
+      </p>
+      <p class="mt-6 font-serif font-semibold text-navy-600 text-[17px] sm:text-[22px] leading-[2]">
+        事業の変化に合わせて、<br>伝え方も、少しずつ整えていく。
+      </p>
+      <p class="mt-6 text-[14px] sm:text-[16px] leading-[2] text-navy-500">
+        必要なときに相談できる、<br class="sm:hidden">あなたの外側のWeb担当として伴走します。
+      </p>
+      <a href="#consultation-form" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-white border border-navy-700/15 px-7 py-3.5 text-[13.5px] sm:text-[14px] font-bold text-navy-700 shadow-softer hover:border-pink-300 hover:text-pink-500 transition-colors">
+        運用サポートについて相談する
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ==================== CTA ==================== -->
 <section id="cta" class="relative overflow-hidden scroll-mt-20">
   <div class="kb-wrap relative min-h-[560px] sm:min-h-[620px] flex items-end sm:items-center">
@@ -611,19 +708,19 @@
 </main>
 
 <!-- ==================== FOOTER ==================== -->
-<footer class="bg-navy-900 text-white/70 pt-14 pb-8">
+<footer class="bg-white text-navy-600 pt-14 pb-8 border-t border-navy-700/10">
   <div class="max-w-7xl mx-auto px-5 sm:px-8">
-    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-10 border-b border-white/10">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-10 border-b border-navy-700/10">
       <div>
-        <img src="assets/logo-mark-white.png" alt="Next Design" class="h-7 w-auto mb-3" width="200" height="57" loading="lazy">
-        <p class="text-[13px] text-white/45">LP制作サービス</p>
+        <img src="assets/logo-mark-alpha.png" alt="Next Design" class="h-7 w-auto mb-3" width="200" height="57" loading="lazy">
+        <p class="text-[13px] text-navy-400">LP制作サービス</p>
       </div>
       <a href="#consultation-form" class="inline-flex items-center justify-center gap-2 rounded-full bg-pink-400 px-6 py-3 text-[13.5px] font-black text-white hover:bg-pink-500 transition-colors w-fit">
         お問い合わせはこちら
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
-    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-white/35">
+    <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-navy-400">
       <p>&copy; 2026 Next Design. All rights reserved.</p>
       <p>集客の未来を、デザインする。</p>
     </div>
